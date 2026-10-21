@@ -1,0 +1,3 @@
+S1: + TFR1950 kontrolü        n 50 · F 7.5 · β -1.85 (p 0.583) · AR [-9.85, 9.25]
+S2: bir ülke dışarıda β        -5.58 (GTM çıkınca) … -3.96 (MEX çıkınca)
+S3: başlangıç ölçüleri arası Spearman: araç~lnLE40 +0.62, araç~TFR1950 -0.42
