@@ -25,3 +25,13 @@
 
 - Dünya Bankası, World Development Indicators, `SH.DYN.AIDS.ZS` "Prevalence of HIV, total (% of population ages 15-49)" (kaynak: UNAIDS). API: https://api.worldbank.org/v2/country/all/indicator/SH.DYN.AIDS.ZS?format=json&per_page=20000&date=1990:2023 (lisans CC BY 4.0).
 - Klasör: `data_dis/hiv_wb/` (ham JSON + `hiv_prevalence_15_49.csv`).
+
+## Kreitmeir & Überfuhr (2024) — yenilenmiş tahmini ölüm aracı (21 Ekim 2026'da indirildi)
+
+- Atıf: Kreitmeir, D. & Überfuhr, T. (2024). Disease and development – The predicted mortality instrument revisited. *Journal of Applied Econometrics*, 39(2), 327–337. https://doi.org/10.1002/jae.3023
+- Veri: Kreitmeir & Überfuhr (2023), replication data, ZBW Journal Data Archive, https://doi.org/10.15456/jae.2023321.1041806336 (CC BY 4.0).
+- ZBW sunucusu (journaldata.zbw.eu) 21 Ekim 2026'da erişilemediği için dosyalar İnternet Arşivi'nin kopyasından alındı:
+  `https://web.archive.org/web/<kayıt>id_/https://journaldata.zbw.eu/dataset/3224cc72-10c3-4109-b21e-8ea71e9bbd1f/resource/<id>/download/<dosya>`
+  (readme.ku.txt: 20240711070819; ku_data.csv: 20240314142302; ku_data.dta: 20240314141317; table_1-3.do). Boyutlar arşivdeki üst veriyle birebir aynı (5.574 / 52.400 / 172.609 bayt).
+- Veri kontrolü: ülke düzeyi aracın 1. aşaması temel 47 ülkede −0,399 (makalenin dipnot 13'üyle aynı).
+- Klasör: `data_dis/kreitmeir/`.
