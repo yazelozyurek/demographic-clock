@@ -13,3 +13,10 @@
 - Atıflar 17 Ekim 2026'da doğrulandı (Maddison: research.rug.nl / IDEAS; Barro–Lee: NBER w15902, Harvard; SITAR: Bristol research portal).
 - Barro–Lee: makale 1950–2010; kullandığımız veri v3 (2021 güncellemesi, 1950–2015).
 - Yöntem atfı: Cole, T. J., Donaldson, M. D. C. & Ben-Shlomo, Y. (2010). SITAR — a useful instrument for growth curve analysis. *International Journal of Epidemiology*, 39(6), 1558–1566.
+
+## Acemoglu & Johnson (2007) — tahmini ölüm aracı (21 Ekim 2026'da indirildi)
+
+- Atıf: Acemoglu, D. & Johnson, S. (2007). Disease and Development: The Effect of Life Expectancy on Economic Growth. *Journal of Political Economy*, 115(6), 925–985.
+- Kaynak: MIT Economics, Daron Acemoglu Data Archive → "Disease and Development" (https://economics.mit.edu/people/faculty/daron-acemoglu/data-archive). Dosyalar: `disease.dta`, `disease_stacked.dta`, `changes4080.dta`, `maketable3v10b.do`, `maketable4v10.do`, `maketable10v10.do`.
+- Klasör: `data_dis/aj2007/`. Lisans belirtilmemiş, bu yüzden depoya konmadı (.gitignore).
+- Kullanılan sütunlar: `compsjmhatit` (tahmini ölüm), `lifeexpect`, `gdppcmadd`, `sample40`, `sjbasesamplenoncomm`, `startrich`, hastalık ölüm hızları (`malaria`, `tball`, `pneumonia`, `smallpox`).

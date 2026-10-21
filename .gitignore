@@ -9,3 +9,6 @@ CLAUDE.md
 __pycache__/
 .ipynb_checkpoints/
 *.pyc
+
+# Acemoglu & Johnson (2007) replication files: licence not stated, download from the MIT data archive (see data_dis/KAYNAKLAR.md)
+data_dis/aj2007/
