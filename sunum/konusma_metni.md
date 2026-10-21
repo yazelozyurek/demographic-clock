@@ -1,6 +1,6 @@
-# Konuşma metni: The Demographic Clock (FİNAL koyu sunum, Q4'lü taslak, 21 Ekim)
+# Konuşma metni: The Demographic Clock (FİNAL koyu sunum, Q4'lü, 22 Ekim)
 
-- **Sunum:** https://claude.ai/artifact/MEYv3jt4EcXwixohtjvXd4 (Q4'lü hali HENÜZ yayımlanmadı; önizleme onaydan sonra yayımlanacak). Eski sunumlar aynen duruyor.
+- **Sunum:** https://claude.ai/artifact/MEYv3jt4EcXwixohtjvXd4 (22 Ekim, sürüm 20: Q4'lü hali yayında; slayt notları bu metinle birebir aynı). Eski sunumlar aynen duruyor.
 - **Uzunluk:** 596 kelime. Dakikada 130 kelimeyle yaklaşık 4,6 dakika, animasyon ve duraklamalarla yaklaşık 4,9 dakika. Sınır 5 dakika. Provada 5:00'ı geçerse kısaltma sırası: (1) Slayt 2'deki ", and it predicted best in backtests" (−6 kelime), (2) Slayt 4'teki "Türkiye's health clock turned in 1965, its fertility clock in 1982." (−11; bu bilgi slaytta da yazıyor).
 - **21 Ekim, Q4 (tırmanan hikâye):** Slayt 4 artık "One more question": Q4 doğal deney (Kreitmeir & Überfuhr 2024 aracı, 50 ülke) + üç ön kayıtlı testin sonucu + Türkiye + sınırlar. Kapak ve Slayt 1 bilerek "üç soru" diyor; Q4 sürpriz olarak geliyor. Horoz cümlesi Slayt 3'ün sonuna alındı, böylece Slayt 4'e köprü oluyor. Kaynakçaya 4 kaynak eklendi. Eski hal: `sunum/eski_surumler/konusma_metni_q4_oncesi.md`.
 - **Önceki değişiklikler (21 Ekim):** Q3 ("Health first?") eklendi; horoz örneği eklendi; Q2 "That no is a result, not a failure" diye çerçevelendi; kapak isim sırası Yazel, Elif, Zehra, Rojbin; yapay zekâ beyanı Sürüm 2.

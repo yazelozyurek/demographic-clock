@@ -1,6 +1,8 @@
 # Sunum klasörü
 
-## ⭐ FİNAL koyu sunum (21 Ekim, Q3'lü): https://claude.ai/artifact/MEYv3jt4EcXwixohtjvXd4
+## ⭐ FİNAL koyu sunum (22 Ekim, Q3 + Q4'lü, sürüm 20): https://claude.ai/artifact/MEYv3jt4EcXwixohtjvXd4
+- Q4 (22 Ekim): Slayt 4 = doğal deney (`pilot/neden_grafigi.py` → `outputs/v3_s4_cause.png`, `v3_s4_pop_compact.png`; analiz `kesif/f_kreitmeir/`) + Türkiye + sınırlar. Kaynakça +4 kaynak.
+- Yerel önizleme: `ONIZLEME=1 python sunum/slayt_uret.py <klasör>` (görseller outputs/'tan). Q4 önizlemeleri `onizleme/q4_*.png`. Q4 öncesi kaynaklar `eski_surumler/slaytlar_kaynak_q4_oncesi/`.
 - Kaynak: `slaytlar_kaynak/` (deck.json + slides). Üretim: `python pilot/saglik_saati.py` → `python sunum/slayt_uret.py <klasör>/project/slides` → `slaytlar_kaynak/slides/references.html`'i kopyala.
 - Q3 grafiği: `outputs/v3_s3_health.png` (`pilot/saglik_saati.py`, veri `clean/saglik_saati.csv`).
 - Eski koyu sunum (RBtUDKTNEkZzcXgiZFYXJ6) aynen duruyor; Q3 öncesi kaynaklar `eski_surumler/taslak1_koyu_q3_oncesi/`.

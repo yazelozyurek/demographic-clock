@@ -28,7 +28,8 @@ elif os.environ.get("DESTE") != "eski":   # FİNAL koyu sunum (https://claude.ai
             "corr": "/_blob/4697bf3d112167be2b61548e6c9cd8ac", "map": "/_blob/4aec6eb7a607c658a140c8dd7310536e",
             "pairs": "/_blob/be4ff1fd6ab3b9712ad0cbc9060f0725", "spread": "/_blob/bf6e5f05e6acc33d4de0afcd9296bb99",
             "pop": "/_blob/8ca44322eccafc5bc2e8b4bd18f27157", "three": "/_blob/970a39face59db71f46dd40819e62d1b",
-            "health": "/_blob/b1d72b545cb86a90463a2ba68ed58cf6"}
+            "health": "/_blob/b1d72b545cb86a90463a2ba68ed58cf6",
+            "cause": "/_blob/81a2837e4fdd7f58597a27b3e4504a3a", "popc": "/_blob/bbaf9de68785b764d82c5e8e21516a4e"}   # Q4 (22 Ekim)
 else:      # Taslak 1 sunumuna yüklü görseller
     BLOB = {"cover": "/_blob/f69f4620deb9aeb3e9a1fa4c09a03881", "gif": "/_blob/a9abf229ad9e7c9c9c41caa06e4d9776",
             "regions": "/_blob/22f79961c14eb6d2cce5e5feff16c9cb", "hist": "/_blob/b762ce40843ed4b19c9e233a3c00bc59",
