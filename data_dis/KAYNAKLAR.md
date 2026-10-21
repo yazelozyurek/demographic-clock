@@ -20,3 +20,8 @@
 - Kaynak: MIT Economics, Daron Acemoglu Data Archive → "Disease and Development" (https://economics.mit.edu/people/faculty/daron-acemoglu/data-archive). Dosyalar: `disease.dta`, `disease_stacked.dta`, `changes4080.dta`, `maketable3v10b.do`, `maketable4v10.do`, `maketable10v10.do`.
 - Klasör: `data_dis/aj2007/`. Lisans belirtilmemiş, bu yüzden depoya konmadı (.gitignore).
 - Kullanılan sütunlar: `compsjmhatit` (tahmini ölüm), `lifeexpect`, `gdppcmadd`, `sample40`, `sjbasesamplenoncomm`, `startrich`, hastalık ölüm hızları (`malaria`, `tball`, `pneumonia`, `smallpox`).
+
+## HIV yaygınlığı (21 Ekim 2026'da indirildi)
+
+- Dünya Bankası, World Development Indicators, `SH.DYN.AIDS.ZS` "Prevalence of HIV, total (% of population ages 15-49)" (kaynak: UNAIDS). API: https://api.worldbank.org/v2/country/all/indicator/SH.DYN.AIDS.ZS?format=json&per_page=20000&date=1990:2023 (lisans CC BY 4.0).
+- Klasör: `data_dis/hiv_wb/` (ham JSON + `hiv_prevalence_15_49.csv`).
