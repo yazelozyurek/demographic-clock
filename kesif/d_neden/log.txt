@@ -1,0 +1,11 @@
+S25 ülkeleri: Bangladesh, Brazil, Chile, China, Colombia, Costa Rica, Ecuador, El Salvador, Guatemala, Honduras, India, Indonesia, Malaysia, Mexico, Myanmar, Nicaragua, Pakistan, Panama, Paraguay, Peru, Philippines, Republic of Korea, Sri Lanka, Thailand, Venezuela (Bolivarian Republic of)
+
+                                       n     pi  pi_p     F    ind ind_p  beta beta_se beta_p                              AR ols_beta ols_p
+ANA: S25, PM40, kontrol LE40+gelir40  25  5.930 0.367 0.815  6.395 0.512 1.078   1.324  0.415  sınırsız (-6.00…6.00 ızgarada)    0.564 0.021
+D1: S47 (çıkarımla saatler dahil)     47  0.306 0.961 0.002  1.941 0.865 6.340 106.601  0.953  sınırsız (-6.00…6.00 ızgarada)    0.737 0.000
+D2: S25, dört hastalık endeksi        25  0.008 0.255 1.298  0.008 0.413 0.990   1.057  0.349  sınırsız (-6.00…6.00 ızgarada)    0.564 0.021
+D3: S25, kontrolsüz                   25 21.232 0.002 9.210 16.728 0.022 0.788   0.430  0.067                    [0.11, 2.58]    0.514 0.000
+
+D4: bir ülkeyi dışarıda bırakınca ana β: -7.10 … 1.55
+
+korelasyon S25 (Spearman): PM40~LE40 -0.42 · PM40~dört 0.94

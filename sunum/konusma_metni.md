@@ -1,7 +1,8 @@
 # Konuşma metni: The Demographic Clock (FİNAL koyu sunum, 21 Ekim)
 
 - **Sunum (yeni link):** https://claude.ai/artifact/MEYv3jt4EcXwixohtjvXd4 · eski sunumlar aynen duruyor.
-- **Uzunluk:** 600 kelime. Dakikada 130 kelimeyle yaklaşık 4,6 dakika, animasyon ve duraklamalarla yaklaşık 4,9 dakika. Sınır 5 dakika. Provada 5:00'ı geçerse ilk kısaltılacak yer: Slayt 2'deki "a level shift with the same number of parameters reaches only 87" (−12 kelime).
+- **Uzunluk:** 621 kelime (21 Ekim, horoz örneği ve Q2 "hayır bir sonuçtur" cümlesi eklendi). Dakikada 130 kelimeyle yaklaşık 4,7 dakika, animasyon ve duraklamalarla yaklaşık 5,0 dakika, yani sınırda. Sınır 5 dakika. Provada 5:00'ı geçerse ilk kısaltılacak yer: Slayt 2'deki "a level shift with the same number of parameters reaches only 87" (−12 kelime).
+- **21 Ekim, horoz örneği:** Slayt 3'e "But first is not the same as cause: a rooster crows before every sunrise…" eklendi. Yer açmak için Slayt 3'ün ilk cümlesi ve tarama cümlesi kısaldı. Slayt 4'teki "16 years" → "17 years" düzeltildi (1982 − 1965). Sunumdaki slayt notlarına HENÜZ işlenmedi. Eski hal: `sunum/eski_surumler/konusma_metni_horoz_oncesi.md`.
 - **21 Ekim değişiklikleri:** Q3 ("Health first?") eklendi; Slayt 3 artık "What moves with the clock?" (Q2 kısaldı, Q3 ana grafik). Kapak isim sırası: Yazel, Elif, Zehra, Rojbin. Slayt 1 bandı "So we ask when…" oldu. Yapay zekâ beyanı Sürüm 2. Kapanışa "Our next question: what starts the health clock?" eklendi (arkadaşının fikri). Eski hal: `sunum/eski_surumler/konusma_metni_q3_oncesi.md`.
 - **Dil:** Her bölümde önce okunacak İngilizce metin, altında Türkçe karşılığı var. Türkçe kısım sadece anlamak içindir, okunmayacak.
 - **"What it means" bantları:** Her içerik slaytının altında sarı çerçeveli bir yorum bandı var. Bantlar okunmayacak; jüri slaytı tek başına okurken anlamı onlardan görür. Metinleri ve Türkçe karşılıkları en altta.
@@ -47,21 +48,21 @@
 
 ## Slayt 3 · Saatle birlikte ne yürüyor? Para, okul, sağlık (yaklaşık 70 sn)
 
-> Our data can measure when a country turns, but cannot prove why. So, without claiming a cause, we checked what lines up with that moment.
+> Our data can show when a country turns, not why, so we checked what lines up with that moment.
 >
 > First, money or school. In 66 countries, income at the turning point ranged from 1,100 to 24,000 dollars. As a threshold it missed the year by 14 years, worse than guessing the typical year. Schooling was steadier, but no better than the calendar.
 >
-> Then our third question, the oldest prediction of transition theory: does health come first? We measured a second clock, the year life expectancy rose fastest, with the same shared curve. In 94 percent of 115 countries it came first, a median of 18 years earlier, and the two clocks move together, rho 0.77. We screened many candidates, correcting for multiple tests; income never helped.
+> That no is a result, not a failure, and it led us to the oldest prediction of transition theory: does health come first? We measured a second clock, the year life expectancy rose fastest, with the same shared curve. In 94 percent of 115 countries it came first, a median of 18 years earlier, and the two clocks move together, rho 0.77. We screened many candidates, with multiple-test correction.
 >
-> So money does not set the clock; health moves with it.
+> But first is not the same as cause: a rooster crows before every sunrise, yet it does not make the sun rise. So money does not set the clock; health moves with it.
 
-*Verimiz bir ülkenin ne zaman döndüğünü ölçebiliyor, ama nedenini kanıtlayamıyor. Bu yüzden neden-sonuç iddia etmeden, o anla neyin örtüştüğüne baktık.*
+*Verimiz bir ülkenin ne zaman döndüğünü gösterebiliyor, nedenini değil. Bu yüzden o anla neyin örtüştüğüne baktık.*
 
 *Önce para mı, okul mu. 66 ülkede dönüm noktasındaki gelir 1.100 ile 24.000 dolar arasında değişiyordu. Eşik olarak kullanılınca yılı 14 yıl şaşırdı; bu, tipik yılı tahmin etmekten bile kötü. Eğitim daha istikrarlıydı, ama takvimden daha iyi değildi.*
 
-*Sonra üçüncü sorumuz, demografik dönüşüm teorisinin en eski tahmini: Sağlık önce mi geliyor? İkinci bir saat ölçtük: yaşam beklentisinin en hızlı yükseldiği yıl, aynı ortak eğri yöntemiyle. 115 ülkenin %94'ünde bu saat önce döndü, medyan 18 yıl önce; iki saat birlikte yürüyor, rho 0,77. Birçok aday değişkeni taradık ve çoklu test için düzeltme yaptık; gelir hiçbir zaman yardımcı olmadı.*
+*Bu "hayır" bir başarısızlık değil, bir sonuç; ve bizi demografik dönüşüm teorisinin en eski tahminine götürdü: Sağlık önce mi geliyor? İkinci bir saat ölçtük: yaşam beklentisinin en hızlı yükseldiği yıl, aynı ortak eğri yöntemiyle. 115 ülkenin %94'ünde bu saat önce döndü, medyan 18 yıl önce; iki saat birlikte yürüyor, rho 0,77. Birçok aday değişkeni çoklu test düzeltmesiyle taradık.*
 
-*Yani saati para kurmuyor; saatle birlikte yürüyen şey sağlık.*
+*Ama önce gelmek, sebep olmak demek değil: Horoz her sabah güneş doğmadan önce öter, ama güneşi o doğurmaz. Yani saati para kurmuyor; saatle birlikte yürüyen şey sağlık.*
 
 > ℹ️ **Bilgi notu (slaytta yok, okunması zorunlu değil; jüri sorarsa ya da süre kalırsa):** As a robustness check, a pre-registered random forest using 1950 income, schooling and geography did not beat the calendar, while simpler linear models did by about two years, mainly through young women's schooling in 1950. Income never helped, so money does not set the clock, and schooling matters as a starting point rather than a threshold.
 
@@ -69,7 +70,7 @@
 
 ## Slayt 4 · Türkiye, sınırlar ve etik (yaklaşık 50 sn)
 
-> Türkiye turned around 1982, about 16 years after its health clock. It was richer than 45 of these 66 countries at their turning points, but its young women had less schooling than 54 of them.
+> Türkiye turned around 1982, about 17 years after its health clock. It was richer than 45 of these 66 countries at their turning points, but its young women had less schooling than 54 of them.
 >
 > The UN projects Türkiye’s population to peak in 2047 at 91 million. By 2100 its 95 percent interval runs from 26 to 125 million, so we show a range, not a number.
 >
