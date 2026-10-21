@@ -2,7 +2,8 @@
 Düzen: her içerik slaytı aynı iskelet = üst yazı + başlık + tek satır alt başlık · hizalı kart ızgarası · "What it means" bandı · dipnot.
 Her grafik bir kartın içinde; kart başlıkları hep aynı stilde (grafiklerin kendi içinde başlık yok).
 Sayılar clean/ ve outputs/ dosyalarından gelir; elle yazılanlar 04/05 notebook çıktılarıdır.
-Çalıştırma:  python sunum/slayt_uret.py <slayt klasörü>          → FİNAL koyu sunum (Q3'lü, 21 Ekim)
+Çalıştırma:  python sunum/slayt_uret.py <slayt klasörü>          → FİNAL koyu sunum (Q3 + Q4, 21 Ekim)
+             ONIZLEME=1 python sunum/slayt_uret.py <klasör>     → aynı slaytlar, görseller outputs/ klasöründen (yerel önizleme)
              DESTE=eski python sunum/slayt_uret.py <klasör>    → eski koyu sunumun görselleri (Taslak 1)
              TEMA=acik python sunum/slayt_uret.py <slayt klasörü> → Taslak 2 (açık; Q3 grafiği henüz yok)"""
 import os
@@ -34,6 +35,13 @@ else:      # Taslak 1 sunumuna yüklü görseller
             "corr": "/_blob/25a9e727fe782b64d03b408bf316fa7a", "map": "/_blob/9cd760a97941af07ca69daa5cdef74b3",
             "pairs": "/_blob/a2ba1d79c53b9f7b6fd0038117bbc707", "spread": "/_blob/afc4421084826537284e3f6d07ce4877",
             "pop": "/_blob/48fb614e93609f297677809fe4af714b", "three": "/_blob/4b28a971c0a6c58f3c65af80e4fcae2d", "health": ""}
+for _k in ("cause", "popc"): BLOB.setdefault(_k, "")   # Q4 görselleri: sunuma yüklenince final sözlüğüne id'leri yazılır
+if os.environ.get("ONIZLEME"):   # yerel önizleme (sadece final koyu sunum): görseller doğrudan outputs/ klasöründen
+    _o = "file://" + str(KOK / "outputs") + "/"
+    BLOB = {k: _o + v for k, v in {"cover": "final_0_cover_clock2.png", "gif": "final_anim_son_kare_dark_sade.png",
+            "regions": "v3_s1_regions.png", "hist": "v3_s1_hist.png", "corr": "v3_s1_corr.png", "map": "v3_s2_map.png",
+            "pairs": "v3_s2_pairs.png", "spread": "v3_s3_spread.png", "pop": "v3_s4_population.png", "three": "v3_s4_three.png",
+            "health": "v3_s3_health.png", "cause": "v3_s4_cause.png", "popc": "v3_s4_pop_compact.png"}.items()}
 
 # ---------- tema: slaytlar mavi renklerle yazılır, açık temada renkler bu tabloyla çevrilir ----------
 ACIK_RENK = {"#1C2E3E": "#FDFDFB", "#0F1A24": "#F3F2EE", "#15222E": "#FBFBF9", "#253645": "#E0DED8", "#101C27": "#F7F6F2",
@@ -185,9 +193,9 @@ s += DIPNOT.format("UN World Population Prospects 2024 · 1950–2023 estimates;
 s += kapat(f"In 2023, women in the Republic of Korea had {kor:.2f} children on average; women in Niger had {nij:.2f}. "
            "In 1950, only 3 of 200 countries were below replacement; by 2023 it was 103. So we asked: do countries follow the same path, "
            "and what moves with their turning point: money, school, or health?\n\n"
-           "Our data is UN World Population Prospects 2024. Summing every row of the file gives 363 billion people, because regions repeat countries; "
-           "countries alone give the correct 8.09 billion. We keep the 200 countries above 100,000 people, 99.98 percent of the world, "
-           "and list every place we leave out. Values after 2023 are UN projections, always drawn dashed.")
+           "Our data is UN World Population Prospects 2024. Summing every row gives 363 billion people, because regions repeat countries; "
+           "countries alone give 8.09 billion. We keep 200 countries, 99.98 percent of the world, list every place we leave out, "
+           "and always draw UN projections dashed.")
 yaz("question", s)
 
 # =============== Slayt 2: Demografik Saat · üstte 2 büyük kart, altta 3 eşit kart ===============
@@ -223,9 +231,8 @@ s += kapat("Our first try fitted an S-shaped curve to each country separately. I
            "it said women started at nine children.\n\nSo we borrowed the SITAR idea from children’s growth charts: one shared S-curve, and one number "
            "per country — its turning point, the year fertility falls fastest. Watch what happens when we shift each country.\n\n"
            "By calendar year, time explains 27 percent of the differences between countries. Shifted to their own turning points, one curve explains "
-           "94 percent; a level shift with the same number of parameters reaches only 87. In backtests, "
-           "the shared curve had the smallest typical error twenty years ahead.\n\nOn the map, the clock runs from Europe to Africa, and a Kruskal–Wallis test "
-           "confirms that regions turn at different times. In 2023, Nigeria is at its turning point, Türkiye passed it about forty years ago, Japan about ninety.")
+           "94 percent, and it predicted best in backtests.\n\nOn the map, the clock runs from Europe to Africa. "
+           "In 2023, Nigeria is at its turning point, Türkiye passed it about forty years ago, Japan about ninety.")
 yaz("clock", s)
 
 # =============== Slayt 3: Ne saatle birlikte yürüyor? · solda Q2 (3 kart), sağda Q3 ana grafik ===============
@@ -261,60 +268,74 @@ s += anlam(f"No wealth threshold sets the clock. Health moves with it: in {sg_on
            f"a median {sg_fark:.0f} years earlier. These are patterns, not causes.")
 s += DIPNOT.format("<b>External data</b>: income from the Maddison Project Database 2023 (GDP per person, via Our World in Data) · schooling from Barro–Lee v3, women 25–34<br>"
                   "Health clock: same shared-curve method on UN WPP life expectancy, 1950–2023 · many other candidates screened (FDR) · association, not cause")
-s += kapat("Our data can measure when a country turns, but cannot prove why. So, without claiming a cause, we checked what lines up with that moment.\n\n"
+s += kapat("Next: what lines up with the turning point?\n\n"
            "First, money or school. In 66 countries, income at the turning point ranged from 1,100 to 24,000 dollars. As a threshold it missed "
            "the year by 14 years, worse than guessing the typical year. Schooling was steadier, but no better than the calendar.\n\n"
-           "Then our third question, the oldest prediction of transition theory: does health come first? We measured a second clock, the year "
-           f"life expectancy rose fastest, with the same shared curve. In {sg_once:.0f} percent of 115 countries it came first, a median of "
-           f"{sg_fark:.0f} years earlier, and the two clocks move together, rho 0.77. We screened many candidates, correcting for "
-           "multiple tests; income never helped.\n\n"
-           "So money does not set the clock; health moves with it.")
+           "That no is a result, not a failure, and it led us to the oldest prediction of transition theory: does health come first? We measured "
+           f"a second clock, the year life expectancy rose fastest, with the same shared curve. In {sg_once:.0f} percent of 115 countries it came "
+           f"first, a median of {sg_fark:.0f} years earlier, and the two clocks move together, rho 0.77. We screened many candidates, with "
+           "multiple-test correction.\n\n"
+           "So money does not set the clock; health moves with it. But first is not the same as cause: a rooster crows before every sunrise, "
+           "yet it does not make the sun rise.")
 yaz("money", s)
 
-# =============== Slayt 4: Türkiye · solda 2 grafik kartı, sağda tablo + sınırlar kartı ===============
-tr = df[df["Location"] == "Türkiye"].set_index("Time")
-yillar = [1950, 1982, 2023, 2047, 2100]
-satirlar = [("People (M)", tr["TPopulation1July"] / 1000, "{:.1f}", "#3987e5"), ("Children", tr["TFR"], "{:.2f}", "#d95926"),
-            ("Life exp.", tr["LEx"], "{:.1f}", "#199e70"), ("Median age", tr["MedianAgePop"], "{:.1f}", "#9085e9"),
-            ("Infant deaths", tr["IMR"], "{:.0f}", "#d55181")]
+# =============== Slayt 4: Q4 sebep testi + Türkiye + sınırlar · solda doğal deney grafiği, sağda Türkiye ve "iddia etmediklerimiz" ===============
+# Sayılar ön kayıtlı testlerin çıktılarından (kesif/d_neden, kesif/e_hiv, kesif/f_kreitmeir); HIV p-değeri kesif/e_hiv/log.txt'ten.
+ku = pd.read_csv(KOK / "kesif/f_kreitmeir/sonuc.csv", index_col=0)
+ku_ana = ku.loc["ANA: ülke düzeyi, ΔTFR 1950→1990"]
+ku_ar = [float(v) for v in re.findall(r"-?\d+\.\d+", ku_ana["AR"])]          # zayıf araca dayanıklı %95 aralık, ΔlnLE başına
+b10, ar_lo, ar_hi = 0.1 * float(ku_ana["beta"]), -0.1 * ku_ar[1], -0.1 * ku_ar[0]   # yaşam beklentisi ~%10 daha çok artınca (çocuk azalışı)
+ku_F = float(ku_ana["F"])
+aj_F = float(pd.read_csv(KOK / "kesif/d_neden/sonuc.csv", index_col=0).iloc[0]["F"])
+hiv_p = 0.40
+assert ku.loc["D6: veri kontrolü, Δln toplam doğum 1940→80", "beta"] > 0          # toplam doğum arttı
+trs = pd.read_csv(KOK / "clean/saglik_saati.csv").set_index("Location").loc["Türkiye"]
+tr_s, tr_d = int(np.floor(trs["t0_saglik"] + 0.5)), int(np.floor(trs["t0"] + 0.5))   # .5 yukarı: 1965, 1982
 poT = po.loc["Türkiye"]; gelir_alt = int((po["gelir"] < poT["gelir"]).sum()); egitim_ust = int((po["egitim"] > poT["egitim"]).sum())
-s = bolum_ac("turkiye", "4 · Türkiye, limits and ethics", "Türkiye turned early for its schooling; its future is a range",
-             f"Turning point 1982 · richer than {gelir_alt} of 66 countries at their turning points, but less schooling than {egitim_ust}")
-s += '<div style="display:grid;grid-template-columns:860px 1fr;gap:16px">\n<div style="display:flex;flex-direction:column;gap:16px">\n'
-s += kart("Population, with UN prediction intervals",
-          gorsel("pop", "Türkiye population: UN estimate to 2023, Medium projection peaking in 2047 at 91.4 million and 65.3 million in 2100, with 80% and 95% prediction intervals widening to 26–125 million", 822, 232))
-s += kart("Three clocks: children per woman",
-          gorsel("three", "Children per woman 1950–2100 for Japan, Türkiye, Nigeria and the world; dots mark turning points: Türkiye 1982, Nigeria 2025; Japan turned about 1935, before the data", 822, 232))
-s += '</div>\n<div style="display:flex;flex-direction:column;gap:16px">\n'
-bes = '<div style="display:grid;grid-template-columns:1.55fr 1fr 1fr 1fr 1fr 1fr;gap:5px">\n<p></p>'
-for y in yillar:
-    bes += (f'<p style="font-size:24px;line-height:1.2;font-weight:600;color:{"#4FB3FF" if y == 1982 else "#9FB0BD"};padding:1px 8px;'
-            f'text-align:right">{y}{"*" if y > 2023 else ""}</p>')
-for ad, seri, bicim, renk in satirlar:
-    v = seri.loc[yillar].values; lo, hi = v.min(), v.max()
-    bes += f'<p style="font-size:24px;line-height:1.3;color:{renk};font-weight:600;padding:3px 4px">{ad}</p>'
-    for y, x in zip(yillar, v):
-        bes += hucre(bicim.format(x), karis("#16222E", renk, 0.15 + 0.85 * (x - lo) / (hi - lo)),
-                     ek="border:1px dashed #9FB0BD;font-style:italic;" if y > 2023 else "")
-bes += (f'</div>\n<p style="font-size:24px;line-height:1.3;color:#9FB0BD">1982 = turning point · * UN projection (dashed) · '
-        f'{"deeper" if ACIK else "brighter"} = higher</p>')
-s += kart("Türkiye at five moments", bes)
-iddia = '<div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 20px">\n'
-for m in ["Causes: these are patterns", "Individual-level claims", "That UN figures are observed",
-          "Results for pre-1950 turns", "That further along is better", "That projections are forecasts",
-          "That UN series are independent", "A fixed health-to-fertility lag"]:
-    iddia += f'<p style="font-size:24px;line-height:1.3;color:#C9D4DC">· {m}</p>\n'
+YAZ = "font-size:24px;line-height:1.3;color:#C9D4DC"
+def test_cip(isaret, metin):
+    renk = "#2FD49A" if isaret == "✓" else "#FF8A3D"
+    return (f'<p style="font-size:24px;line-height:1.2;color:#E8EEF2;background:#16222E;border:1px solid #3A4B5A;border-radius:8px;'
+            f'padding:3px 12px;white-space:nowrap"><b style="color:{renk}">{isaret}</b> {metin}</p>')
+s = bolum_ac("turkiye", "4 · One more question", "Where medicines saved more lives, fertility later fell further",
+             '<span style="color:#FF8A3D">Q4</span> Is health a cause? A natural experiment in 50 countries · then Türkiye and our limits')
+s += '<div style="display:grid;grid-template-columns:940px 1fr;gap:16px">\n'
+s += kart("Q4 · The 1940s medicines as a natural experiment",
+          gorsel("cause", "Scatter plot of 50 countries: x is how many deaths per 1,000 people a year the medicines and vaccines of the 1940s could "
+                 "prevent, given each country's 1940 disease mix (0 to 10); y is the change in children per woman from 1950 to 1990. The fitted line "
+                 "falls: more deaths prevented, larger fall in fertility. Rich countries of 1940 sit at the left; Republic of Korea, Sri Lanka, "
+                 "Egypt, Mexico and Guatemala are labelled", 900, 400)
+          + f'\n<p style="{YAZ}">About 10% more life expectancy (1940–80) → <b style="color:#FFFFFF">{-b10:.2f} fewer children</b> per woman by 1990 '
+            f'(95% CI {ar_lo:.2f}–{ar_hi:.2f}, first stage F = {ku_F:.0f}) · yet total births rose</p>'
+          + '\n<div style="display:flex;flex-direction:row;gap:10px;align-items:center">'
+            f'<p style="{YAZ};white-space:nowrap">Three tests:</p>'
+          + test_cip("✗", f"Timing · F &lt; {np.ceil(aj_F):.0f}") + test_cip("✗", f"HIV shock · p = {hiv_p:.2f}") + test_cip("✓", "Fertility fall")
+          + '</div>')
+s += '<div style="display:flex;flex-direction:column;gap:16px">\n'
+s += kart(f"Türkiye: health {tr_s} → fertility {tr_d}",
+          gorsel("popc", "Türkiye population 1950–2100: UN estimate to 2023, then the Medium projection peaking in 2047 at 91 million, with 80% and "
+                 "95% prediction intervals widening to 26–125 million in 2100", 668, 230)
+          + f'\n<p style="{YAZ}">At its turn, richer than {gelir_alt} of 66 countries, with less schooling than {egitim_ust} · '
+            'peak 2047 at 91 M; for 2100, a range (26–125 M)</p>')
+iddia = '<div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 20px">\n'
+for m in ["A settled cause", "Individual-level facts", "Observed UN figures", "Independent UN series",
+          "Projections as forecasts", "That ahead is better"]:
+    iddia += f'<p style="{YAZ}">· {m}</p>\n'
 iddia += '</div>'
 s += kart("What we do not claim", iddia, "flex:1;border-left:5px solid #d95926")
 s += '</div>\n</div>\n'
-s += anlam("Türkiye’s decline began while young women’s schooling was still low (3.6 vs a typical 5.5 years). Its population likely peaks "
-           "near 2047; for 2100, plan with the range (26–125 million), not one number.")
-s += DIPNOT.format("Guided by the ASA Ethical Guidelines for Statistical Practice (2022) · UN WPP 2024, Medium and probabilistic variants · infant deaths per 1,000 births")
-trs = pd.read_csv(KOK / "clean/saglik_saati.csv").set_index("Location").loc["Türkiye"]
-s += kapat(f"Türkiye turned around 1982, about {trs['fark']:.0f} years after its health clock. It was richer than {gelir_alt} of these 66 countries at their turning points, but its young women had "
-           f"less schooling than {egitim_ust} of them.\n\nThe UN projects Türkiye’s population to peak in 2047 at 91 million. By 2100 its 95 percent "
-           "interval runs from 26 to 125 million, so we show a range, not a number.\n\nOur limits: these patterns say nothing about individual women. "
-           "Where registration is weak, UN figures are model estimates, and health and fertility may come from the same surveys. And the clock is not a race: being further along is not better.")
+s += anlam("Where the 1940s medicines saved more lives, births first rose, but children per woman fell further by 1990. "
+           "One of three tests, each planned in advance, supports health as a cause; none settles it.")
+s += DIPNOT.format("<b>Natural experiment</b>: Kreitmeir &amp; Überfuhr (2024) instrument, after Acemoglu &amp; Johnson (2007) · two-stage least squares, "
+                   "weak-IV-robust 95% CI<br>Each test's plan was committed before its results · HIV: World Bank (UNAIDS) · Türkiye: UN WPP 2024 "
+                   "intervals · ASA Ethical Guidelines (2022)")
+s += kapat("So, one more question: is health a cause, or just the rooster? We ran three tests, each planned before seeing its results. "
+           "Two could not tell. The third is a natural experiment: in the 1940s, new medicines and vaccines reached the world at once, and "
+           "countries hit hardest by those diseases gained most. Where they saved more lives, more babies were born, but each woman had fewer: "
+           f"about ten percent more life expectancy, {-b10:.2f} fewer children by 1990. This supports health as a cause, but does not settle it, "
+           "because the signal comes from how sick countries were in 1940.\n\n"
+           f"Türkiye’s health clock turned in {tr_s}, its fertility clock in {tr_d}. Its population likely peaks in 2047; for 2100 we show "
+           "a range, 26 to 125 million.\n\nOur limits: these are country patterns, not facts about individual women, and the clock is not a race.")
 yaz("turkiye", s)
 
 if ACIK:   # kaynakça elle yazılı: mavi sürümden renkleri çevirerek kopyala
