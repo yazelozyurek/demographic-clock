@@ -1,0 +1,10 @@
+family,sample,feature,method,n,statistic,p,post_t0_risk,note
+predictive_vs_best_univariate,S66,pre_t0_only vs sch_mf2564_1950,LOO_LASSO_nestedCV_vs_OLS_single_wilcoxon,66,-0.8221656043140229,0.08514419723719027,False,
+predictive_vs_best_univariate,S66,pre_t0_only vs sch_mf2564_1950,LOO_RandomForest_vs_OLS_single_wilcoxon,66,-0.6614359902906699,0.05993249038251183,False,
+predictive_vs_best_univariate,S66,pre_t0_only vs sch_mf2564_1950,LOO_GradientBoosting_vs_OLS_single_wilcoxon,66,-2.079405918098473,0.12922394602140921,False,
+predictive,S66,lex_1950,LOO_OLS_vs_baseline_wilcoxon,66,-2.237733827573493,0.001298102577212623,False,medAE=7.26
+predictive,S66,lex_1950+sch_mf2564_1950,LOO_OLS_vs_baseline_wilcoxon,66,-2.2342582040940897,0.019220230904428356,False,medAE=7.27
+predictive,S66,lex_1950+sch_mf2564_1950+log_gdp_1950,LOO_OLS_vs_baseline_wilcoxon,64,-2.0916811158292603,0.02507054011275821,False,medAE=7.41
+predictive_vs_best_univariate,S115,pre_t0_only vs lex_1950,LOO_LASSO_nestedCV_vs_OLS_single_wilcoxon,115,-1.620943357279657,0.08559523665147613,False,
+predictive_vs_best_univariate,S115,pre_t0_only vs lex_1950,LOO_RandomForest_vs_OLS_single_wilcoxon,115,-2.111082449952164,0.007759016096828571,False,
+predictive_vs_best_univariate,S115,pre_t0_only vs lex_1950,LOO_GradientBoosting_vs_OLS_single_wilcoxon,115,-1.887959777076503,0.0701098960187667,False,

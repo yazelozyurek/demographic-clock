@@ -1,0 +1,111 @@
+feature,definition,sample,method,n,rho,p,q_BH
+urban_share_1950,"urban share of population (%), 1950 [UN WUP via OWID]",primary_115,spearman,114,-0.4564146640630807,3.330482052652838e-07,7.216044447414482e-07
+urban_share_1950,"urban share of population (%), 1950 [UN WUP via OWID]",primary_115,spearman_within_region,114,-0.3693158343204922,5.2620289669828794e-05,7.439167631670496e-05
+urban30_year,first year urban share >=30% (interp.; 1950-2050 incl. UN proj.),primary_115,spearman,114,0.4030935945331341,8.724332051755681e-06,1.354224676690434e-05
+urban30_year,first year urban share >=30% (interp.; 1950-2050 incl. UN proj.),primary_115,spearman_within_region,114,0.3158220637113023,0.0006194796821171,0.0007579516110609224
+urban30_year,first year urban share >=30% (interp.; 1950-2050 incl. UN proj.),primary_115,spearman_uncensored_only,64,0.4922996124569306,3.597350771890013e-05,5.196173337174463e-05
+urban50_year,first year urban share >=50% (interp.; 1950-2050 incl. UN proj.),primary_115,spearman,114,0.4265866620551292,2.2157907119637663e-06,3.905800577020877e-06
+urban50_year,first year urban share >=50% (interp.; 1950-2050 incl. UN proj.),primary_115,spearman_within_region,114,0.3588430553251802,8.833704964819631e-05,0.00011629181219509388
+urban50_year,first year urban share >=50% (interp.; 1950-2050 incl. UN proj.),primary_115,spearman_uncensored_only,78,0.3430410981780556,0.0021077458793893,0.0025489019936800836
+child_mort_1950_log,"log under-5 mortality (%), 1950 [Gapminder/IGME via OWID]",primary_115,spearman,39,0.4545868982515747,0.0036456162875301,0.004308455612535573
+child_mort_1950_log,"log under-5 mortality (%), 1950 [Gapminder/IGME via OWID]",primary_115,spearman_within_region,39,0.2929923381252201,0.0702707014394473,0.07381972676467191
+child_mort_1960_log,"log under-5 mortality (%), 1960 (fallback baseline)",primary_115,spearman,75,0.5452644238415829,4.228813788393347e-07,8.795932679858162e-07
+child_mort_1960_log,"log under-5 mortality (%), 1960 (fallback baseline)",primary_115,spearman_within_region,73,0.500385761333579,6.544926748121914e-06,1.0313217906131501e-05
+child_mort_below10pct_year,"first year under-5 mortality <=10% (interp., 1800+)",primary_115,spearman,101,0.546875325070718,3.283908778147871e-09,7.761966202894968e-09
+child_mort_below10pct_year,"first year under-5 mortality <=10% (interp., 1800+)",primary_115,spearman_within_region,101,0.5615377447393424,1.002880686227049e-09,2.6074897841903273e-09
+child_mort_below10pct_year,"first year under-5 mortality <=10% (interp., 1800+)",primary_115,spearman_uncensored_only,91,0.5951624419212677,4.919174085606083e-10,1.346300276060612e-09
+literacy_1950,"adult literacy rate (%), 1950 [OWID compilation, UNESCO]",primary_115,spearman,93,-0.6626262967171432,4.670860367501337e-13,1.7991462156301446e-12
+literacy_1950,"adult literacy rate (%), 1950 [OWID compilation, UNESCO]",primary_115,spearman_within_region,92,-0.6277360612577247,2.1302171518478895e-11,6.515958346828838e-11
+vdem_electdem_1950,"V-Dem electoral democracy index, 1950",primary_115,spearman,89,-0.4085350805252705,7.05222286561431e-05,9.650410237156425e-05
+vdem_electdem_1950,"V-Dem electoral democracy index, 1950",primary_115,spearman_within_region,89,-0.2862964041256072,0.0065298351261042,0.007381552751248226
+pop_density_1950_log,"log population density, 1950 [OWID/HYDE/WPP]",primary_115,spearman,114,-0.4124112684979324,5.128835288486074e-06,8.206136461577719e-06
+pop_density_1950_log,"log population density, 1950 [OWID/HYDE/WPP]",primary_115,spearman_within_region,114,-0.3614108640916257,7.792828166421741e-05,0.00010525378302699495
+life_exp_1950,"life expectancy at birth, 1950 [OWID = UN WPP] (WPP-derived)",primary_115,spearman,114,-0.6468966830403614,7.51967123155545e-15,3.5547536730989406e-14
+life_exp_1950,"life expectancy at birth, 1950 [OWID = UN WPP] (WPP-derived)",primary_115,spearman_within_region,114,-0.5833920688197813,9.660473058375573e-12,3.1396537439720606e-11
+life_exp50_year,"first year life expectancy >=50 (interp., 1850+) (WPP-derived post-1950)",primary_115,spearman,114,0.7005572952796835,4.108942594344693e-18,2.2491054200623586e-17
+life_exp50_year,"first year life expectancy >=50 (interp., 1850+) (WPP-derived post-1950)",primary_115,spearman_within_region,114,0.6185624190422937,2.238696410517064e-13,8.954785642068256e-13
+life_exp50_year,"first year life expectancy >=50 (interp., 1850+) (WPP-derived post-1950)",primary_115,spearman_uncensored_only,91,0.6023360497613148,2.6802418823929134e-10,7.533652858617919e-10
+calories_1961,"daily per-capita calorie supply, 1961 [FAO via OWID] (1961 baseline)",primary_115,spearman,84,-0.2876136700568126,0.0079820294131724,0.008926140419031501
+calories_1961,"daily per-capita calorie supply, 1961 [FAO via OWID] (1961 baseline)",primary_115,spearman_within_region,83,-0.372081184054516,0.0005328855446973,0.0006597630553395143
+some_formal_edu_1950,"share of pop. 15+ with some formal education (%), 1950 [Lee-Lee/van Zanden via OWID] (overlaps Barro-Lee)",primary_115,spearman,59,-0.6491633292169596,2.6770491633726717e-08,6.052458978059953e-08
+some_formal_edu_1950,"share of pop. 15+ with some formal education (%), 1950 [Lee-Lee/van Zanden via OWID] (overlaps Barro-Lee)",primary_115,spearman_within_region,57,-0.6078113345398004,5.326176890219615e-07,1.065235378043923e-06
+some_formal_edu50_year,"first year share with some formal education >=50% (interp., 1870+)",primary_115,spearman,79,0.43852193044047,5.293253891765546e-05,7.439167631670496e-05
+some_formal_edu50_year,"first year share with some formal education >=50% (interp., 1870+)",primary_115,spearman_within_region,78,0.4296341907211076,8.659753691708647e-05,0.0001154633825561153
+some_formal_edu50_year,"first year share with some formal education >=50% (interp., 1870+)",primary_115,spearman_uncensored_only,59,0.6431473551152824,3.9501358756607315e-08,8.740726192951405e-08
+primary_net_enrol_1950,"net primary enrolment rate (%), 1950+-2 [Lee-Lee/UNESCO via OWID]",primary_115,spearman,59,-0.5904905654909027,8.535152814364395e-07,1.6438072086924017e-06
+primary_net_enrol_1950,"net primary enrolment rate (%), 1950+-2 [Lee-Lee/UNESCO via OWID]",primary_115,spearman_within_region,57,-0.5259136753695648,2.654168475273836e-05,3.92837679712641e-05
+primary_enrol50_year,"first year net primary enrolment >=50% (interp., 1820+)",primary_115,spearman,109,0.1789470759242684,0.0626339507212589,0.06715392654650439
+primary_enrol50_year,"first year net primary enrolment >=50% (interp., 1820+)",primary_115,spearman_within_region,109,0.1666732316765406,0.0832386056758684,0.08656814990290312
+primary_enrol50_year,"first year net primary enrolment >=50% (interp., 1820+)",primary_115,spearman_uncensored_only,62,0.6769428508703255,1.536387021007278e-09,3.715912794994347e-09
+contracep20_year,"first year contraceptive prevalence (any method) >=20% (bracketed only) [WDI/UN via OWID] PROXIMATE, near-mechanical",primary_115,spearman,24,0.6978465701808961,0.0001499606419395,0.00019254205878651851
+contracep20_year,"first year contraceptive prevalence (any method) >=20% (bracketed only) [WDI/UN via OWID] PROXIMATE, near-mechanical",primary_115,spearman_within_region,22,0.7822033898305086,1.7020353908329407e-05,2.6031129506856738e-05
+contracep20_year,"first year contraceptive prevalence (any method) >=20% (bracketed only) [WDI/UN via OWID] PROXIMATE, near-mechanical",primary_115,spearman_uncensored_only,24,0.6978465701808961,0.0001499606419395,0.00019254205878651851
+female_lfp_1991_POSTT0,"female labour-force participation (%), 1991 [ILO via OWID/WDI] POST-t0, leakage",primary_115,spearman,102,-0.0876843258934468,0.3808432788846786,0.3883107941569272
+female_lfp_1991_POSTT0,"female labour-force participation (%), 1991 [ILO via OWID/WDI] POST-t0, leakage",primary_115,spearman_within_region,102,0.0087998348659677,0.9300512701747566,0.9300512701747566
+urban_share_1950,"urban share of population (%), 1950 [UN WUP via OWID]",all_200,spearman,199,-0.7066750327592516,2.011461538166109e-31,2.3243555552141704e-30
+urban_share_1950,"urban share of population (%), 1950 [UN WUP via OWID]",all_200,spearman_within_region,197,-0.4643402329912033,6.289572876387463e-12,2.1803852638143207e-11
+urban30_year,first year urban share >=30% (interp.; 1950-2050 incl. UN proj.),all_200,spearman,199,0.6533529064522839,1.330632445766316e-25,9.884698168549777e-25
+urban30_year,first year urban share >=30% (interp.; 1950-2050 incl. UN proj.),all_200,spearman_within_region,197,0.4436843454359903,6.577885986967252e-11,1.9545718361274117e-10
+urban30_year,first year urban share >=30% (interp.; 1950-2050 incl. UN proj.),all_200,spearman_uncensored_only,108,0.6322045279194018,2.1664522780980734e-13,8.954785642068256e-13
+urban50_year,first year urban share >=50% (interp.; 1950-2050 incl. UN proj.),all_200,spearman,199,0.6536562220943738,1.242399225912249e-25,9.884698168549777e-25
+urban50_year,first year urban share >=50% (interp.; 1950-2050 incl. UN proj.),all_200,spearman_within_region,197,0.4553746606612254,1.7763335347975908e-11,5.598142049059074e-11
+urban50_year,first year urban share >=50% (interp.; 1950-2050 incl. UN proj.),all_200,spearman_uncensored_only,125,0.6230629932771355,8.558798814027151e-15,3.870065550690538e-14
+child_mort_1950_log,"log under-5 mortality (%), 1950 [Gapminder/IGME via OWID]",all_200,spearman,83,0.7988737435238831,1.4420265580876374e-19,8.821809531830253e-19
+child_mort_1950_log,"log under-5 mortality (%), 1950 [Gapminder/IGME via OWID]",all_200,spearman_within_region,81,0.4315505284364401,5.760676159790745e-05,7.988137608243167e-05
+child_mort_1960_log,"log under-5 mortality (%), 1960 (fallback baseline)",all_200,spearman,143,0.8554739418543864,3.940211160369082e-42,6.829699344639742e-41
+child_mort_1960_log,"log under-5 mortality (%), 1960 (fallback baseline)",all_200,spearman_within_region,141,0.5395132032219817,5.095471619452494e-12,1.8273415462864117e-11
+child_mort_below10pct_year,"first year under-5 mortality <=10% (interp., 1800+)",all_200,spearman,184,0.8518072578466983,5.451869239154803e-53,1.8899813362403316e-51
+child_mort_below10pct_year,"first year under-5 mortality <=10% (interp., 1800+)",all_200,spearman_within_region,182,0.6083154502675138,8.380888845094438e-20,5.447577749311385e-19
+child_mort_below10pct_year,"first year under-5 mortality <=10% (interp., 1800+)",all_200,spearman_uncensored_only,155,0.8817151643802241,8.81462675493054e-52,1.8334423650255522e-50
+literacy_1950,"adult literacy rate (%), 1950 [OWID compilation, UNESCO]",all_200,spearman,149,-0.8307203438069162,3.1765568497114235e-39,4.71945589099983e-38
+literacy_1950,"adult literacy rate (%), 1950 [OWID compilation, UNESCO]",all_200,spearman_within_region,147,-0.5869749617579777,5.572549154615191e-15,2.759738628952285e-14
+vdem_electdem_1950,"V-Dem electoral democracy index, 1950",all_200,spearman,167,-0.5090610293888628,2.1463806869011612e-12,7.972271122775741e-12
+vdem_electdem_1950,"V-Dem electoral democracy index, 1950",all_200,spearman_within_region,165,-0.2136811006695148,0.0058545217155805,0.006765225093559688
+pop_density_1950_log,"log population density, 1950 [OWID/HYDE/WPP]",all_200,spearman,198,-0.4603646144591054,8.859244849370907e-12,2.972133755917982e-11
+pop_density_1950_log,"log population density, 1950 [OWID/HYDE/WPP]",all_200,spearman_within_region,196,-0.2670366000815147,0.000154614809362,0.00019609683138595123
+life_exp_1950,"life expectancy at birth, 1950 [OWID = UN WPP] (WPP-derived)",all_200,spearman,199,-0.8512684247037655,4.4741676508677867e-57,2.326567178451249e-55
+life_exp_1950,"life expectancy at birth, 1950 [OWID = UN WPP] (WPP-derived)",all_200,spearman_within_region,197,-0.5840355723786269,2.0932742861950032e-19,1.209447365357113e-18
+life_exp50_year,"first year life expectancy >=50 (interp., 1850+) (WPP-derived post-1950)",all_200,spearman,199,0.8879287775482335,2.317106184056154e-68,2.4097904314184e-66
+life_exp50_year,"first year life expectancy >=50 (interp., 1850+) (WPP-derived post-1950)",all_200,spearman_within_region,197,0.6346934631504646,1.3174529212954944e-23,9.134340254315429e-23
+life_exp50_year,"first year life expectancy >=50 (interp., 1850+) (WPP-derived post-1950)",all_200,spearman_uncensored_only,164,0.8733294531374064,1.7905584872723358e-52,4.655452066908073e-51
+calories_1961,"daily per-capita calorie supply, 1961 [FAO via OWID] (1961 baseline)",all_200,spearman,142,-0.6061925125992201,1.306422228193397e-15,6.7933955866056636e-15
+calories_1961,"daily per-capita calorie supply, 1961 [FAO via OWID] (1961 baseline)",all_200,spearman_within_region,140,-0.3849739590897742,2.6460367605216216e-06,4.5864637182374775e-06
+some_formal_edu_1950,"share of pop. 15+ with some formal education (%), 1950 [Lee-Lee/van Zanden via OWID] (overlaps Barro-Lee)",all_200,spearman,111,-0.8419065389359308,5.66585406589832e-31,5.892488228534253e-30
+some_formal_edu_1950,"share of pop. 15+ with some formal education (%), 1950 [Lee-Lee/van Zanden via OWID] (overlaps Barro-Lee)",all_200,spearman_within_region,109,-0.5073459212402541,1.8009104139308233e-08,4.162104067751236e-08
+some_formal_edu50_year,"first year share with some formal education >=50% (interp., 1870+)",all_200,spearman,146,0.5700370786586992,5.924758748372588e-14,2.5673954576281216e-13
+some_formal_edu50_year,"first year share with some formal education >=50% (interp., 1870+)",all_200,spearman_within_region,144,0.378001859887705,2.997568569494553e-06,5.028179535926347e-06
+some_formal_edu50_year,"first year share with some formal education >=50% (interp., 1870+)",all_200,spearman_uncensored_only,99,0.834569774047544,7.384346503722077e-27,6.981563967155418e-26
+primary_net_enrol_1950,"net primary enrolment rate (%), 1950+-2 [Lee-Lee/UNESCO via OWID]",all_200,spearman,111,-0.8040479123820837,2.3042178413051488e-26,1.9969887957977955e-25
+primary_net_enrol_1950,"net primary enrolment rate (%), 1950+-2 [Lee-Lee/UNESCO via OWID]",all_200,spearman_within_region,109,-0.4639953871925931,3.74214736635324e-07,7.942516859198714e-07
+primary_enrol50_year,"first year net primary enrolment >=50% (interp., 1820+)",all_200,spearman,192,0.4377120107279673,2.170933273134718e-10,6.271585011278074e-10
+primary_enrol50_year,"first year net primary enrolment >=50% (interp., 1820+)",all_200,spearman_within_region,190,0.332094549966083,2.8556741704916147e-06,4.868690389034884e-06
+primary_enrol50_year,"first year net primary enrolment >=50% (interp., 1820+)",all_200,spearman_uncensored_only,114,0.8780707137832677,1.206774858508274e-37,1.5688073160607563e-36
+contracep20_year,"first year contraceptive prevalence (any method) >=20% (bracketed only) [WDI/UN via OWID] PROXIMATE, near-mechanical",all_200,spearman,43,0.7730362890552436,1.2415181159973135e-09,3.0742353348504908e-09
+contracep20_year,"first year contraceptive prevalence (any method) >=20% (bracketed only) [WDI/UN via OWID] PROXIMATE, near-mechanical",all_200,spearman_within_region,41,0.654075735468298,3.5216597434055444e-06,5.76940121606853e-06
+contracep20_year,"first year contraceptive prevalence (any method) >=20% (bracketed only) [WDI/UN via OWID] PROXIMATE, near-mechanical",all_200,spearman_uncensored_only,43,0.7730362890552436,1.2415181159973135e-09,3.0742353348504908e-09
+female_lfp_1991_POSTT0,"female labour-force participation (%), 1991 [ILO via OWID/WDI] POST-t0, leakage",all_200,spearman,185,0.0771413382013963,0.2966334008281947,0.3054442939221015
+female_lfp_1991_POSTT0,"female labour-force participation (%), 1991 [ILO via OWID/WDI] POST-t0, leakage",all_200,spearman_within_region,183,0.0247162165978116,0.7398028213368619,0.7469853730003265
+literacy_1950,partial Spearman given BL_women_sch_1950,primary_115,partial_spearman,71,-0.3228718670784609,0.0064082446223504225,0.0073237081398290545
+literacy_1950,partial Spearman given log_gdp_1950,primary_115,partial_spearman,69,-0.666306139189625,5.592143092485917e-10,1.4912381579962445e-09
+BL_women_sch_1950 (reference),same subsample as literacy_1950,primary_115,spearman,71,-0.5315780722074527,1.8420013431629365e-06,3.4208596373025968e-06
+literacy_1950 vs BL_women_sch_1950,"collinearity check (feature vs control), not a t0 test, excluded from FDR",primary_115,collinearity_check,71,0.8184737168296572,2.8726184405687954e-18,
+some_formal_edu_1950,partial Spearman given BL_women_sch_1950,primary_115,partial_spearman,59,-0.37787375640377235,0.0034509377214504222,0.004125258885411999
+some_formal_edu_1950,partial Spearman given log_gdp_1950,primary_115,partial_spearman,55,-0.6248702407501612,4.4084152336046074e-07,8.989709495978024e-07
+BL_women_sch_1950 (reference),same subsample as some_formal_edu_1950,primary_115,spearman,59,-0.574138497388179,1.990957425532384e-06,3.5699926250925506e-06
+some_formal_edu_1950 vs BL_women_sch_1950,"collinearity check (feature vs control), not a t0 test, excluded from FDR",primary_115,collinearity_check,59,0.9219012552307193,3.8266064459230474e-25,
+primary_net_enrol_1950,partial Spearman given BL_women_sch_1950,primary_115,partial_spearman,59,-0.305009181834395,0.01990734200919442,0.022025144350598082
+primary_net_enrol_1950,partial Spearman given log_gdp_1950,primary_115,partial_spearman,55,-0.5383500513600219,2.6818726211151452e-05,3.92837679712641e-05
+BL_women_sch_1950 (reference),same subsample as primary_net_enrol_1950,primary_115,spearman,59,-0.574138497388179,1.990957425532384e-06,3.5699926250925506e-06
+primary_net_enrol_1950 vs BL_women_sch_1950,"collinearity check (feature vs control), not a t0 test, excluded from FDR",primary_115,collinearity_check,59,0.7322610827053752,4.380601541731192e-11,
+urban_share_1950,partial Spearman given BL_women_sch_1950,primary_115,partial_spearman,79,-0.3138452734991661,0.00513999160222377,0.006006282321699687
+urban_share_1950,partial Spearman given log_gdp_1950,primary_115,partial_spearman,76,-0.21885840130538967,0.05923102912855309,0.06416694822259918
+BL_women_sch_1950 (reference),same subsample as urban_share_1950,primary_115,spearman,79,-0.5115585538876835,1.4493841143733416e-06,2.7406535980877733e-06
+urban_share_1950 vs BL_women_sch_1950,"collinearity check (feature vs control), not a t0 test, excluded from FDR",primary_115,collinearity_check,79,0.31993670886075953,0.004049326582704189,
+vdem_electdem_1950,partial Spearman given BL_women_sch_1950,primary_115,partial_spearman,71,-0.22089719542807984,0.06611347097034195,0.0701612344991384
+vdem_electdem_1950,partial Spearman given log_gdp_1950,primary_115,partial_spearman,70,-0.4126633175236742,0.0004256620520756811,0.0005333596797092872
+BL_women_sch_1950 (reference),same subsample as vdem_electdem_1950,primary_115,spearman,71,-0.5484122627294256,7.383956244644334e-07,1.4489272631000203e-06
+vdem_electdem_1950 vs BL_women_sch_1950,"collinearity check (feature vs control), not a t0 test, excluded from FDR",primary_115,collinearity_check,71,0.3896672295219837,0.0007824263218848937,
+child_mort_1960_log,partial Spearman given BL_women_sch_1950,primary_115,partial_spearman,62,0.28935638904010386,0.0237088370444907,0.02595493739607403
+child_mort_1960_log,partial Spearman given log_gdp_1950,primary_115,partial_spearman,63,0.5155263443178844,1.8038588961308948e-05,2.718859785472653e-05
+BL_women_sch_1950 (reference),same subsample as child_mort_1960_log,primary_115,spearman,62,-0.5505560061455684,3.550400748349865e-06,5.76940121606853e-06
+child_mort_1960_log vs BL_women_sch_1950,"collinearity check (feature vs control), not a t0 test, excluded from FDR",primary_115,collinearity_check,62,-0.6574752587444286,6.435384179405141e-09,

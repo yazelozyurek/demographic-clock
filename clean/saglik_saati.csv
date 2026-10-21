@@ -1,0 +1,201 @@
+LocID,Location,ISO3_code,bolge,t0,guvenilir,t0_saglik,fark
+4,Afghanistan,AFG,Asia,2033.5,False,2011.0,22.5
+8,Albania,ALB,Europe,1976.5,True,1953.0,23.5
+12,Algeria,DZA,Africa,1996.0,True,1978.5,17.5
+24,Angola,AGO,Africa,2032.0,False,2013.0,19.0
+31,Azerbaijan,AZE,Asia,1973.5,True,1972.0,1.5
+32,Argentina,ARG,Latin America and the Caribbean,1951.5,False,1945.0,6.5
+36,Australia,AUS,Oceania,1947.5,False,1922.0,25.5
+40,Austria,AUT,Europe,1934.0,False,1929.0,5.0
+44,Bahamas,BHS,Latin America and the Caribbean,1966.0,True,1948.0,18.0
+48,Bahrain,BHR,Asia,1987.0,True,1957.0,30.0
+50,Bangladesh,BGD,Asia,1993.0,True,1987.5,5.5
+51,Armenia,ARM,Asia,1961.5,True,1957.0,4.5
+52,Barbados,BRB,Latin America and the Caribbean,1957.0,False,1943.0,14.0
+56,Belgium,BEL,Europe,1935.0,False,1926.5,8.5
+64,Bhutan,BTN,Asia,1995.5,True,1992.5,3.0
+68,Bolivia (Plurinational State of),BOL,Latin America and the Caribbean,1995.5,True,1989.0,6.5
+70,Bosnia and Herzegovina,BIH,Europe,1955.5,True,1953.5,2.0
+72,Botswana,BWA,Africa,1995.0,True,1982.0,13.0
+76,Brazil,BRA,Latin America and the Caribbean,1976.5,True,1966.0,10.5
+84,Belize,BLZ,Latin America and the Caribbean,1993.0,True,1959.0,34.0
+90,Solomon Islands,SLB,Oceania,2009.5,True,1972.5,37.0
+96,Brunei Darussalam,BRN,Asia,1982.0,True,1952.5,29.5
+100,Bulgaria,BGR,Europe,1933.5,False,1938.5,-5.0
+104,Myanmar,MMR,Asia,1983.5,True,1988.5,-5.0
+108,Burundi,BDI,Africa,2031.5,False,2009.0,22.5
+112,Belarus,BLR,Europe,1938.5,False,1941.0,-2.5
+116,Cambodia,KHM,Asia,1996.0,True,1997.5,-1.5
+120,Cameroon,CMR,Africa,2017.5,False,2000.0,17.5
+124,Canada,CAN,Northern America,1948.5,False,1921.0,27.5
+132,Cabo Verde,CPV,Africa,1995.5,True,1970.5,25.0
+140,Central African Republic,CAF,Africa,2030.5,False,2020.5,10.0
+144,Sri Lanka,LKA,Asia,1970.5,True,1953.0,17.5
+148,Chad,TCD,Africa,2051.0,False,2017.5,33.5
+152,Chile,CHL,Latin America and the Caribbean,1963.5,True,1950.0,13.5
+156,China,CHN,Asia,1972.5,True,1966.5,6.0
+158,"China, Taiwan Province of China",TWN,Asia,1967.0,True,1941.5,25.5
+170,Colombia,COL,Latin America and the Caribbean,1978.5,True,1958.5,20.0
+174,Comoros,COM,Africa,2014.5,False,1994.0,20.5
+175,Mayotte,MYT,Africa,2014.0,False,1955.0,59.0
+178,Congo,COG,Africa,2010.0,False,1988.0,22.0
+180,Democratic Republic of the Congo,COD,Africa,2040.0,False,2007.0,33.0
+188,Costa Rica,CRI,Latin America and the Caribbean,1976.5,True,1940.0,36.5
+191,Croatia,HRV,Europe,1935.0,False,1940.0,-5.0
+192,Cuba,CUB,Latin America and the Caribbean,1957.0,False,1941.0,16.0
+196,Cyprus,CYP,Asia,1951.0,False,1940.5,10.5
+203,Czechia,CZE,Europe,1935.5,False,1933.0,2.5
+204,Benin,BEN,Africa,2023.0,False,2002.0,21.0
+208,Denmark,DNK,Europe,1936.0,False,1920.5,15.5
+214,Dominican Republic,DOM,Latin America and the Caribbean,1985.5,True,1966.0,19.5
+218,Ecuador,ECU,Latin America and the Caribbean,1986.5,True,1962.0,24.5
+222,El Salvador,SLV,Latin America and the Caribbean,1987.0,True,1978.0,9.0
+226,Equatorial Guinea,GNQ,Africa,2016.5,False,2003.5,13.0
+231,Ethiopia,ETH,Africa,2021.5,False,2008.0,13.5
+232,Eritrea,ERI,Africa,2013.0,True,2003.5,9.5
+233,Estonia,EST,Europe,1928.0,False,1936.5,-8.5
+242,Fiji,FJI,Oceania,1979.5,True,1965.0,14.5
+246,Finland,FIN,Europe,1939.5,False,1929.0,10.5
+250,France,FRA,Europe,1941.0,False,1924.0,17.0
+254,French Guiana,GUF,Latin America and the Caribbean,1976.0,True,1956.5,19.5
+258,French Polynesia,PYF,Oceania,1979.0,True,1948.5,30.5
+262,Djibouti,DJI,Africa,2003.5,True,1993.5,10.0
+266,Gabon,GAB,Africa,2002.0,True,1982.5,19.5
+268,Georgia,GEO,Asia,1944.5,False,1952.0,-7.5
+270,Gambia,GMB,Africa,2019.0,False,2003.5,15.5
+275,State of Palestine,PSE,Asia,2013.0,True,1968.5,44.5
+276,Germany,DEU,Europe,1930.0,False,1927.5,2.5
+288,Ghana,GHA,Africa,2007.5,True,1992.0,15.5
+296,Kiribati,KIR,Oceania,1995.5,True,1979.5,16.0
+300,Greece,GRC,Europe,1935.5,False,1924.0,11.5
+308,Grenada,GRD,Latin America and the Caribbean,1975.0,True,1949.5,25.5
+312,Guadeloupe,GLP,Latin America and the Caribbean,1970.0,True,1946.0,24.0
+316,Guam,GUM,Oceania,1973.0,True,1944.0,29.0
+320,Guatemala,GTM,Latin America and the Caribbean,2001.5,True,1981.0,20.5
+324,Guinea,GIN,Africa,2020.0,False,2010.5,9.5
+328,Guyana,GUY,Latin America and the Caribbean,1980.0,True,1969.5,10.5
+332,Haiti,HTI,Latin America and the Caribbean,1999.0,True,1995.5,3.5
+340,Honduras,HND,Latin America and the Caribbean,2000.5,True,1974.5,26.0
+344,"China, Hong Kong SAR",HKG,Asia,1959.5,True,1930.5,29.0
+348,Hungary,HUN,Europe,1933.5,False,1940.5,-7.0
+352,Iceland,ISL,Europe,1955.0,False,1912.5,42.5
+356,India,IND,Asia,1986.0,True,1985.0,1.0
+360,Indonesia,IDN,Asia,1979.0,True,1977.5,1.5
+364,Iran (Islamic Republic of),IRN,Asia,1991.0,True,1976.0,15.0
+368,Iraq,IRQ,Asia,2009.0,True,1973.5,35.5
+372,Ireland,IRL,Europe,1957.0,False,1928.5,28.5
+376,Israel,ISR,Asia,1964.5,False,1925.5,39.0
+380,Italy,ITA,Europe,1934.5,False,1925.0,9.5
+384,Côte d'Ivoire,CIV,Africa,2020.5,False,2005.0,15.5
+388,Jamaica,JAM,Latin America and the Caribbean,1973.5,True,1948.5,25.0
+392,Japan,JPN,Asia,1934.5,False,1925.0,9.5
+398,Kazakhstan,KAZ,Asia,1963.0,False,1964.0,-1.0
+400,Jordan,JOR,Asia,2004.0,True,1961.5,42.5
+404,Kenya,KEN,Africa,2011.5,True,1986.5,25.0
+408,Dem. People's Republic of Korea,PRK,Asia,1955.5,True,1966.0,-10.5
+410,Republic of Korea,KOR,Asia,1967.5,True,1959.0,8.5
+412,Kosovo (under UNSC res. 1244),XKX,Europe,1982.5,True,1970.5,12.0
+414,Kuwait,KWT,Asia,1988.0,True,1947.0,41.0
+417,Kyrgyzstan,KGZ,Asia,1980.0,True,1968.5,11.5
+418,Lao People's Democratic Republic,LAO,Asia,2001.5,True,1995.0,6.5
+422,Lebanon,LBN,Asia,1978.0,True,1953.0,25.0
+426,Lesotho,LSO,Africa,1994.5,True,1998.5,-4.0
+428,Latvia,LVA,Europe,1921.0,False,1939.5,-18.5
+430,Liberia,LBR,Africa,2017.5,False,2010.0,7.5
+434,Libya,LBY,Africa,1997.5,True,1972.5,25.0
+440,Lithuania,LTU,Europe,1938.5,False,1936.0,2.5
+442,Luxembourg,LUX,Europe,1927.5,False,1931.0,-3.5
+446,"China, Macao SAR",MAC,Asia,1957.0,True,1936.0,21.0
+450,Madagascar,MDG,Africa,2015.5,False,1995.0,20.5
+454,Malawi,MWI,Africa,2018.5,True,2013.0,5.5
+458,Malaysia,MYS,Asia,1980.0,True,1955.0,25.0
+462,Maldives,MDV,Asia,1997.0,True,1980.0,17.0
+466,Mali,MLI,Africa,2039.5,False,2016.5,23.0
+470,Malta,MLT,Europe,1949.0,False,1930.0,19.0
+474,Martinique,MTQ,Latin America and the Caribbean,1967.5,True,1941.5,26.0
+478,Mauritania,MRT,Africa,2020.0,False,1987.5,32.5
+480,Mauritius,MUS,Africa,1968.5,True,1956.0,12.5
+484,Mexico,MEX,Latin America and the Caribbean,1985.5,True,1963.0,22.5
+496,Mongolia,MNG,Asia,1991.0,True,1983.5,7.5
+498,Republic of Moldova,MDA,Europe,1948.5,False,1959.5,-11.0
+499,Montenegro,MNE,Europe,1953.5,False,1940.0,13.5
+504,Morocco,MAR,Africa,1990.5,True,1980.5,10.0
+508,Mozambique,MOZ,Africa,2022.0,False,2011.0,11.0
+512,Oman,OMN,Asia,2003.5,True,1977.0,26.5
+516,Namibia,NAM,Africa,2000.5,True,1988.0,12.5
+524,Nepal,NPL,Asia,1994.5,True,1993.0,1.5
+528,Netherlands,NLD,Europe,1944.0,False,1915.0,29.0
+531,Curaçao,CUW,Latin America and the Caribbean,1963.0,True,1941.5,21.5
+533,Aruba,ABW,Latin America and the Caribbean,1960.5,True,1944.0,16.5
+540,New Caledonia,NCL,Oceania,1974.0,True,1961.0,13.0
+548,Vanuatu,VUT,Oceania,2004.0,True,1971.5,32.5
+554,New Zealand,NZL,Oceania,1954.5,False,1923.5,31.0
+558,Nicaragua,NIC,Latin America and the Caribbean,1993.5,True,1977.0,16.5
+562,Niger,NER,Africa,2150.0,False,2016.0,134.0
+566,Nigeria,NGA,Africa,2024.5,False,2017.5,7.0
+578,Norway,NOR,Europe,1941.0,False,1913.0,28.0
+583,Micronesia (Fed. States of),FSM,Oceania,2000.0,True,1970.5,29.5
+586,Pakistan,PAK,Asia,2011.5,True,1985.0,26.5
+591,Panama,PAN,Latin America and the Caribbean,1977.5,True,1949.5,28.0
+598,Papua New Guinea,PNG,Oceania,2001.5,True,1985.0,16.5
+600,Paraguay,PRY,Latin America and the Caribbean,1990.5,True,1956.5,34.0
+604,Peru,PER,Latin America and the Caribbean,1987.5,True,1969.5,18.0
+608,Philippines,PHL,Asia,1992.5,True,1964.0,28.5
+616,Poland,POL,Europe,1946.5,False,1940.5,6.0
+620,Portugal,PRT,Europe,1947.0,False,1940.0,7.0
+624,Guinea-Bissau,GNB,Africa,2017.0,False,2010.5,6.5
+626,Timor-Leste,TLS,Asia,2010.0,True,2013.0,-3.0
+630,Puerto Rico,PRI,Latin America and the Caribbean,1960.0,True,1934.0,26.0
+634,Qatar,QAT,Asia,1988.5,True,1949.0,39.5
+638,Réunion,REU,Africa,1973.5,True,1950.0,23.5
+642,Romania,ROU,Europe,1941.5,False,1944.5,-3.0
+643,Russian Federation,RUS,Europe,1938.5,False,1949.0,-10.5
+646,Rwanda,RWA,Africa,2017.5,True,2001.0,16.5
+662,Saint Lucia,LCA,Latin America and the Caribbean,1982.0,True,1955.5,26.5
+670,Saint Vincent and the Grenadines,VCT,Latin America and the Caribbean,1981.0,True,1957.0,24.0
+678,Sao Tome and Principe,STP,Africa,2011.5,True,1982.0,29.5
+682,Saudi Arabia,SAU,Asia,2002.0,True,1969.5,32.5
+686,Senegal,SEN,Africa,2016.5,False,1996.0,20.5
+688,Serbia,SRB,Europe,1934.0,False,1942.5,-8.5
+690,Seychelles,SYC,Africa,1974.0,True,1952.0,22.0
+694,Sierra Leone,SLE,Africa,2019.0,True,2019.5,-0.5
+702,Singapore,SGP,Asia,1963.0,True,1938.5,24.5
+703,Slovakia,SVK,Europe,1947.0,False,1936.5,10.5
+704,Viet Nam,VNM,Asia,1982.0,True,1961.5,20.5
+705,Slovenia,SVN,Europe,1937.0,False,1934.5,2.5
+706,Somalia,SOM,Africa,2074.5,False,2012.0,62.5
+710,South Africa,ZAF,Africa,1984.0,True,1980.5,3.5
+716,Zimbabwe,ZWE,Africa,2002.5,True,1990.0,12.5
+724,Spain,ESP,Europe,1941.0,False,1925.5,15.5
+728,South Sudan,SSD,Africa,2022.5,False,2035.5,-13.0
+729,Sudan,SDN,Africa,2018.0,False,1987.5,30.5
+732,Western Sahara,ESH,Africa,1993.0,True,1995.0,-2.0
+740,Suriname,SUR,Latin America and the Caribbean,1981.0,True,1968.5,12.5
+748,Eswatini,SWZ,Africa,2001.0,True,1997.0,4.0
+752,Sweden,SWE,Europe,1931.0,False,1913.0,18.0
+756,Switzerland,CHE,Europe,1933.5,False,1918.0,15.5
+760,Syrian Arab Republic,SYR,Asia,2003.0,True,1964.5,38.5
+762,Tajikistan,TJK,Asia,1999.5,True,1974.0,25.5
+764,Thailand,THA,Asia,1974.0,True,1965.5,8.5
+768,Togo,TGO,Africa,2015.5,False,1997.5,18.0
+776,Tonga,TON,Oceania,2000.0,True,1959.0,41.0
+780,Trinidad and Tobago,TTO,Latin America and the Caribbean,1966.5,True,1954.0,12.5
+784,United Arab Emirates,ARE,Asia,1989.0,True,1958.0,31.0
+788,Tunisia,TUN,Africa,1986.0,True,1970.0,16.0
+792,Türkiye,TUR,Asia,1981.5,True,1965.0,16.5
+795,Turkmenistan,TKM,Asia,1990.5,True,1973.0,17.5
+800,Uganda,UGA,Africa,2026.5,False,2001.5,25.0
+804,Ukraine,UKR,Europe,1932.0,False,1942.0,-10.0
+807,North Macedonia,MKD,Europe,1956.0,True,1952.0,4.0
+818,Egypt,EGY,Africa,1994.0,True,1981.5,12.5
+826,United Kingdom,GBR,Europe,1936.5,False,1923.5,13.0
+832,Jersey,JEY,Europe,1928.0,False,1924.5,3.5
+834,United Republic of Tanzania,TZA,Africa,2020.0,False,1996.5,23.5
+840,United States of America,USA,Northern America,1948.0,False,1927.5,20.5
+854,Burkina Faso,BFA,Africa,2025.5,False,2009.5,16.0
+858,Uruguay,URY,Latin America and the Caribbean,1945.0,False,1936.5,8.5
+860,Uzbekistan,UZB,Asia,1988.5,True,1964.5,24.0
+862,Venezuela (Bolivarian Republic of),VEN,Latin America and the Caribbean,1981.5,True,1954.0,27.5
+882,Samoa,WSM,Oceania,2007.0,False,1962.5,44.5
+887,Yemen,YEM,Asia,2024.0,False,1994.5,29.5
+894,Zambia,ZMB,Africa,2020.0,False,1996.5,23.5

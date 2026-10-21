@@ -1,0 +1,11 @@
+# Raw UN WPP2024 files (129 MB): download them, see README
+data/
+
+# Private working notes (not part of the analysis)
+CLAUDE.md
+
+# System and editor files
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
+*.pyc

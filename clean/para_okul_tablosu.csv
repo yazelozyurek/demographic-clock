@@ -1,0 +1,67 @@
+LocID,ISO3_code,Location,bolge,pop2023,t0,gelir,egitim,hata_gelir,hata_egitim,hata_takvim
+8,ALB,Albania,Europe,2811.655,1976.5,3665.0,5.17,24.5,0.5,12.0
+12,DZA,Algeria,Africa,46164.219,1996.0,5452.0,5.49,-17.0,1.0,-8.0
+48,BHR,Bahrain,Asia,1569.666,1987.0,6786.0,7.01,-23.0,-5.0,1.5
+50,BGD,Bangladesh,Asia,171466.99,1993.0,1096.0,2.8,,14.0,-5.0
+68,BOL,Bolivia (Plurinational State of),Latin America and the Caribbean,12244.16,1995.5,3959.0,8.47,13.5,-12.5,-7.5
+72,BWA,Botswana,Africa,2480.244,1995.0,6318.0,8.92,-6.0,-9.0,-7.0
+76,BRA,Brazil,Latin America and the Caribbean,211140.729,1976.5,7079.0,2.43,-5.5,15.5,12.0
+104,MMR,Myanmar,Asia,54133.798,1983.5,1492.0,2.72,31.5,23.5,5.0
+116,KHM,Cambodia,Asia,17423.88,1996.0,1451.0,2.77,,,-8.0
+144,LKA,Sri Lanka,Asia,22971.617,1970.5,2389.0,6.26,25.5,-1.5,18.0
+152,CHL,Chile,Latin America and the Caribbean,19658.835,1963.5,7320.0,5.43,,1.5,25.0
+156,CHN,China,Asia,1422584.933,1972.5,1431.0,4.69,28.5,8.5,16.0
+158,TWN,"China, Taiwan Province of China",Asia,23317.145,1967.0,3300.0,2.99,6.0,10.0,21.5
+170,COL,Colombia,Latin America and the Caribbean,52321.152,1978.5,6443.0,4.85,-8.5,4.5,10.0
+188,CRI,Costa Rica,Latin America and the Caribbean,5105.526,1976.5,7182.0,5.62,-11.5,-0.5,12.0
+214,DOM,Dominican Republic,Latin America and the Caribbean,11331.266,1985.5,3682.0,5.52,10.5,1.5,3.0
+218,ECU,Ecuador,Latin America and the Caribbean,17980.083,1986.5,6452.0,7.31,-13.5,-9.5,2.0
+222,SLV,El Salvador,Latin America and the Caribbean,6309.624,1987.0,3351.0,4.59,11.0,6.0,1.5
+266,GAB,Gabon,Africa,2484.788,2002.0,11141.0,9.68,-35.0,-24.0,-14.0
+288,GHA,Ghana,Africa,33787.914,2007.5,2726.0,6.69,,-20.5,-19.5
+320,GTM,Guatemala,Latin America and the Caribbean,18124.838,2001.5,5980.0,4.34,-29.5,11.5,-13.5
+332,HTI,Haiti,Latin America and the Caribbean,11637.398,1999.0,1513.0,3.96,,,-11.0
+340,HND,Honduras,Latin America and the Caribbean,10644.851,2000.5,3336.0,6.23,,-9.5,-12.5
+344,HKG,"China, Hong Kong SAR",Asia,7442.734,1959.5,5088.0,4.14,-0.5,7.5,29.0
+356,IND,India,Asia,1438069.596,1986.0,1755.0,2.19,26.0,22.0,2.5
+360,IDN,Indonesia,Asia,281190.067,1979.0,2810.0,3.64,15.0,24.0,9.5
+364,IRN,Iran (Islamic Republic of),Asia,90608.707,1991.0,6381.0,5.51,-24.0,1.0,-3.0
+368,IRQ,Iraq,Asia,45074.049,2009.0,9269.0,6.88,-45.0,-11.0,-21.0
+388,JAM,Jamaica,Latin America and the Caribbean,2839.786,1973.5,6229.0,5.53,-8.5,1.5,15.0
+400,JOR,Jordan,Asia,11439.214,2004.0,9289.0,9.64,-39.0,-18.0,-16.0
+404,KEN,Kenya,Africa,55339.003,2011.5,2755.0,7.16,,-16.5,-23.5
+410,KOR,Republic of Korea,Asia,51748.739,1967.5,2468.0,6.07,9.5,-1.5,21.0
+414,KWT,Kuwait,Asia,4838.782,1988.0,12317.0,6.21,,-7.0,0.5
+417,KGZ,Kyrgyzstan,Asia,7073.516,1980.0,5848.0,10.06,,-16.0,8.5
+418,LAO,Lao People's Democratic Republic,Asia,7664.992,2001.5,2487.0,4.58,12.5,8.5,-13.5
+426,LSO,Lesotho,Africa,2311.472,1994.5,1924.0,7.48,,-12.5,-6.5
+434,LBY,Libya,Africa,7305.659,1997.5,8545.0,7.33,-29.5,-4.5,-9.5
+458,MYS,Malaysia,Asia,35126.298,1980.0,5829.0,5.8,-3.0,0.0,8.5
+480,MUS,Mauritius,Africa,1273.588,1968.5,4602.0,3.68,-7.5,15.5,20.0
+484,MEX,Mexico,Latin America and the Caribbean,129739.759,1985.5,9283.0,6.03,-23.5,-1.5,3.0
+496,MNG,Mongolia,Asia,3431.932,1991.0,1976.0,8.93,15.0,-17.0,-3.0
+504,MAR,Morocco,Africa,37712.505,1990.5,4130.0,2.41,10.5,24.5,-2.5
+516,NAM,Namibia,Africa,2963.095,2000.5,5972.0,7.19,-40.5,-18.5,-12.5
+524,NPL,Nepal,Asia,29694.614,1994.5,1456.0,1.69,,,-6.5
+558,NIC,Nicaragua,Latin America and the Caribbean,6823.613,1993.5,2154.0,5.4,-19.5,1.5,-5.5
+586,PAK,Pakistan,Asia,247504.495,2011.5,4538.0,4.84,,3.5,-23.5
+591,PAN,Panama,Latin America and the Caribbean,4458.759,1977.5,5946.0,7.03,-8.5,-9.5,11.0
+600,PRY,Paraguay,Latin America and the Caribbean,6844.146,1990.5,5230.0,6.76,-10.5,-9.5,-2.5
+604,PER,Peru,Latin America and the Caribbean,33845.617,1987.5,6003.0,7.39,-26.5,-8.5,1.0
+608,PHL,Philippines,Asia,114891.199,1992.5,3399.0,7.41,14.5,-17.5,-4.5
+634,QAT,Qatar,Asia,2979.082,1988.5,12492.0,7.1,,-8.5,-0.5
+682,SAU,Saudi Arabia,Asia,33264.292,2002.0,24054.0,8.05,-46.0,-11.0,-14.0
+702,SGP,Singapore,Asia,5789.09,1963.0,4049.0,2.97,5.0,19.0,25.5
+704,VNM,Viet Nam,Asia,100352.192,1982.0,1293.0,5.53,30.0,-2.0,6.5
+710,ZAF,South Africa,Africa,63212.384,1984.0,6672.0,5.31,-24.0,2.0,4.5
+716,ZWE,Zimbabwe,Africa,16340.822,2002.5,2025.0,7.74,,-10.5,-14.5
+748,SWZ,Eswatini,Africa,1230.506,2001.0,4977.0,4.9,-1.0,-18.0,-13.0
+760,SYR,Syrian Arab Republic,Asia,23594.623,2003.0,6987.0,5.38,-50.0,1.0,-15.0
+762,TJK,Tajikistan,Asia,10389.798,1999.5,1723.0,11.32,,-37.5,-11.5
+764,THA,Thailand,Asia,71702.435,1974.0,3045.0,2.46,12.0,16.0,14.5
+780,TTO,Trinidad and Tobago,Latin America and the Caribbean,1502.932,1966.5,11531.0,6.05,,-5.5,22.0
+784,ARE,United Arab Emirates,Asia,10642.081,1989.0,21072.0,6.99,,-4.0,-1.0
+788,TUN,Tunisia,Africa,12200.431,1986.0,4841.0,3.46,-1.0,12.0,2.5
+792,TUR,Türkiye,Asia,87270.502,1981.5,6381.0,3.59,-9.5,14.5,7.0
+818,EGY,Egypt,Africa,114535.772,1994.0,4747.0,4.83,1.0,3.0,-6.0
+862,VEN,Venezuela (Bolivarian Republic of),Latin America and the Caribbean,28300.854,1981.5,15423.0,6.12,,-2.5,7.0

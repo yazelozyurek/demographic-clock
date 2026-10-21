@@ -1,0 +1,201 @@
+Location,LocID,ISO3_code,bolge,pop2023,t0,guvenilir,saat_2023
+Afghanistan,4,AFG,Asia,41454.761,2033.5,False,-10.5
+Albania,8,ALB,Europe,2811.655,1976.5,True,46.5
+Algeria,12,DZA,Africa,46164.219,1996.0,True,27.0
+Angola,24,AGO,Africa,36749.906,2032.0,False,-9.0
+Azerbaijan,31,AZE,Asia,10318.207,1973.5,True,49.5
+Argentina,32,ARG,Latin America and the Caribbean,45538.401,1951.5,False,71.5
+Australia,36,AUS,Oceania,26451.124,1947.5,False,75.5
+Austria,40,AUT,Europe,9130.429,1934.0,False,89.0
+Bahamas,44,BHS,Latin America and the Caribbean,399.44,1966.0,True,57.0
+Bahrain,48,BHR,Asia,1569.666,1987.0,True,36.0
+Bangladesh,50,BGD,Asia,171466.99,1993.0,True,30.0
+Armenia,51,ARM,Asia,2943.393,1961.5,True,61.5
+Barbados,52,BRB,Latin America and the Caribbean,282.336,1957.0,False,66.0
+Belgium,56,BEL,Europe,11712.893,1935.0,False,88.0
+Bhutan,64,BTN,Asia,786.385,1995.5,True,27.5
+Bolivia (Plurinational State of),68,BOL,Latin America and the Caribbean,12244.16,1995.5,True,27.5
+Bosnia and Herzegovina,70,BIH,Europe,3185.073,1955.5,True,67.5
+Botswana,72,BWA,Africa,2480.244,1995.0,True,28.0
+Brazil,76,BRA,Latin America and the Caribbean,211140.729,1976.5,True,46.5
+Belize,84,BLZ,Latin America and the Caribbean,411.106,1993.0,True,30.0
+Solomon Islands,90,SLB,Oceania,800.006,2009.5,True,13.5
+Brunei Darussalam,96,BRN,Asia,458.949,1982.0,True,41.0
+Bulgaria,100,BGR,Europe,6795.803,1933.5,False,89.5
+Myanmar,104,MMR,Asia,54133.798,1983.5,True,39.5
+Burundi,108,BDI,Africa,13689.45,2031.5,False,-8.5
+Belarus,112,BLR,Europe,9115.68,1938.5,False,84.5
+Cambodia,116,KHM,Asia,17423.88,1996.0,True,27.0
+Cameroon,120,CMR,Africa,28372.687,2017.5,False,5.5
+Canada,124,CAN,Northern America,39299.104,1948.5,False,74.5
+Cabo Verde,132,CPV,Africa,522.33,1995.5,True,27.5
+Central African Republic,140,CAF,Africa,5152.42,2030.5,False,-7.5
+Sri Lanka,144,LKA,Asia,22971.617,1970.5,True,52.5
+Chad,148,TCD,Africa,19319.064,2051.0,False,-28.0
+Chile,152,CHL,Latin America and the Caribbean,19658.835,1963.5,True,59.5
+China,156,CHN,Asia,1422584.933,1972.5,True,50.5
+"China, Taiwan Province of China",158,TWN,Asia,23317.145,1967.0,True,56.0
+Colombia,170,COL,Latin America and the Caribbean,52321.152,1978.5,True,44.5
+Comoros,174,COM,Africa,850.387,2014.5,False,8.5
+Mayotte,175,MYT,Africa,316.015,2014.0,False,9.0
+Congo,178,COG,Africa,6182.885,2010.0,False,13.0
+Democratic Republic of the Congo,180,COD,Africa,105789.731,2040.0,False,-17.0
+Costa Rica,188,CRI,Latin America and the Caribbean,5105.526,1976.5,True,46.5
+Croatia,191,HRV,Europe,3896.023,1935.0,False,88.0
+Cuba,192,CUB,Latin America and the Caribbean,11019.93,1957.0,False,66.0
+Cyprus,196,CYP,Asia,1344.976,1951.0,False,72.0
+Czechia,203,CZE,Europe,10809.716,1935.5,False,87.5
+Benin,204,BEN,Africa,14111.034,2023.0,False,0.0
+Denmark,208,DNK,Europe,5948.136,1936.0,False,87.0
+Dominican Republic,214,DOM,Latin America and the Caribbean,11331.266,1985.5,True,37.5
+Ecuador,218,ECU,Latin America and the Caribbean,17980.083,1986.5,True,36.5
+El Salvador,222,SLV,Latin America and the Caribbean,6309.624,1987.0,True,36.0
+Equatorial Guinea,226,GNQ,Africa,1847.549,2016.5,False,6.5
+Ethiopia,231,ETH,Africa,128691.692,2021.5,False,1.5
+Eritrea,232,ERI,Africa,3470.39,2013.0,True,10.0
+Estonia,233,EST,Europe,1367.196,1928.0,False,95.0
+Fiji,242,FJI,Oceania,924.146,1979.5,True,43.5
+Finland,246,FIN,Europe,5601.185,1939.5,False,83.5
+France,250,FRA,Europe,66438.822,1941.0,False,82.0
+French Guiana,254,GUF,Latin America and the Caribbean,303.402,1976.0,True,47.0
+French Polynesia,258,PYF,Oceania,281.118,1979.0,True,44.0
+Djibouti,262,DJI,Africa,1152.944,2003.5,True,19.5
+Gabon,266,GAB,Africa,2484.788,2002.0,True,21.0
+Georgia,268,GEO,Asia,3807.492,1944.5,False,78.5
+Gambia,270,GMB,Africa,2697.846,2019.0,False,4.0
+State of Palestine,275,PSE,Asia,5409.202,2013.0,True,10.0
+Germany,276,DEU,Europe,84548.231,1930.0,False,93.0
+Ghana,288,GHA,Africa,33787.914,2007.5,True,15.5
+Kiribati,296,KIR,Oceania,132.53,1995.5,True,27.5
+Greece,300,GRC,Europe,10242.908,1935.5,False,87.5
+Grenada,308,GRD,Latin America and the Caribbean,117.081,1975.0,True,48.0
+Guadeloupe,312,GLP,Latin America and the Caribbean,376.516,1970.0,True,53.0
+Guam,316,GUM,Oceania,166.506,1973.0,True,50.0
+Guatemala,320,GTM,Latin America and the Caribbean,18124.838,2001.5,True,21.5
+Guinea,324,GIN,Africa,14405.468,2020.0,False,3.0
+Guyana,328,GUY,Latin America and the Caribbean,826.353,1980.0,True,43.0
+Haiti,332,HTI,Latin America and the Caribbean,11637.398,1999.0,True,24.0
+Honduras,340,HND,Latin America and the Caribbean,10644.851,2000.5,True,22.5
+"China, Hong Kong SAR",344,HKG,Asia,7442.734,1959.5,True,63.5
+Hungary,348,HUN,Europe,9686.464,1933.5,False,89.5
+Iceland,352,ISL,Europe,387.558,1955.0,False,68.0
+India,356,IND,Asia,1438069.596,1986.0,True,37.0
+Indonesia,360,IDN,Asia,281190.067,1979.0,True,44.0
+Iran (Islamic Republic of),364,IRN,Asia,90608.707,1991.0,True,32.0
+Iraq,368,IRQ,Asia,45074.049,2009.0,True,14.0
+Ireland,372,IRL,Europe,5196.63,1957.0,False,66.0
+Israel,376,ISR,Asia,9256.314,1964.5,False,58.5
+Italy,380,ITA,Europe,59499.453,1934.5,False,88.5
+Côte d'Ivoire,384,CIV,Africa,31165.654,2020.5,False,2.5
+Jamaica,388,JAM,Latin America and the Caribbean,2839.786,1973.5,True,49.5
+Japan,392,JPN,Asia,124370.947,1934.5,False,88.5
+Kazakhstan,398,KAZ,Asia,20330.104,1963.0,False,60.0
+Jordan,400,JOR,Asia,11439.214,2004.0,True,19.0
+Kenya,404,KEN,Africa,55339.003,2011.5,True,11.5
+Dem. People's Republic of Korea,408,PRK,Asia,26418.204,1955.5,True,67.5
+Republic of Korea,410,KOR,Asia,51748.739,1967.5,True,55.5
+Kosovo (under UNSC res. 1244),412,XKX,Europe,1700.031,1982.5,True,40.5
+Kuwait,414,KWT,Asia,4838.782,1988.0,True,35.0
+Kyrgyzstan,417,KGZ,Asia,7073.516,1980.0,True,43.0
+Lao People's Democratic Republic,418,LAO,Asia,7664.992,2001.5,True,21.5
+Lebanon,422,LBN,Asia,5773.492,1978.0,True,45.0
+Lesotho,426,LSO,Africa,2311.472,1994.5,True,28.5
+Latvia,428,LVA,Europe,1882.396,1921.0,False,102.0
+Liberia,430,LBR,Africa,5493.031,2017.5,False,5.5
+Libya,434,LBY,Africa,7305.659,1997.5,True,25.5
+Lithuania,440,LTU,Europe,2854.099,1938.5,False,84.5
+Luxembourg,442,LUX,Europe,665.098,1927.5,False,95.5
+"China, Macao SAR",446,MAC,Asia,713.912,1957.0,True,66.0
+Madagascar,450,MDG,Africa,31195.932,2015.5,False,7.5
+Malawi,454,MWI,Africa,21104.482,2018.5,True,4.5
+Malaysia,458,MYS,Asia,35126.298,1980.0,True,43.0
+Maldives,462,MDV,Asia,525.994,1997.0,True,26.0
+Mali,466,MLI,Africa,23769.127,2039.5,False,-16.5
+Malta,470,MLT,Europe,532.956,1949.0,False,74.0
+Martinique,474,MTQ,Latin America and the Caribbean,346.002,1967.5,True,55.5
+Mauritania,478,MRT,Africa,5022.442,2020.0,False,3.0
+Mauritius,480,MUS,Africa,1273.588,1968.5,True,54.5
+Mexico,484,MEX,Latin America and the Caribbean,129739.759,1985.5,True,37.5
+Mongolia,496,MNG,Asia,3431.932,1991.0,True,32.0
+Republic of Moldova,498,MDA,Europe,3067.07,1948.5,False,74.5
+Montenegro,499,MNE,Europe,633.552,1953.5,False,69.5
+Morocco,504,MAR,Africa,37712.505,1990.5,True,32.5
+Mozambique,508,MOZ,Africa,33635.16,2022.0,False,1.0
+Oman,512,OMN,Asia,5049.269,2003.5,True,19.5
+Namibia,516,NAM,Africa,2963.095,2000.5,True,22.5
+Nepal,524,NPL,Asia,29694.614,1994.5,True,28.5
+Netherlands,528,NLD,Europe,18092.524,1944.0,False,79.0
+Curaçao,531,CUW,Latin America and the Caribbean,185.427,1963.0,True,60.0
+Aruba,533,ABW,Latin America and the Caribbean,107.939,1960.5,True,62.5
+New Caledonia,540,NCL,Oceania,289.87,1974.0,True,49.0
+Vanuatu,548,VUT,Oceania,320.408,2004.0,True,19.0
+New Zealand,554,NZL,Oceania,5172.836,1954.5,False,68.5
+Nicaragua,558,NIC,Latin America and the Caribbean,6823.613,1993.5,True,29.5
+Niger,562,NER,Africa,26159.867,2150.0,False,-127.0
+Nigeria,566,NGA,Africa,227882.945,2024.5,False,-1.5
+Norway,578,NOR,Europe,5519.167,1941.0,False,82.0
+Micronesia (Fed. States of),583,FSM,Oceania,112.63,2000.0,True,23.0
+Pakistan,586,PAK,Asia,247504.495,2011.5,True,11.5
+Panama,591,PAN,Latin America and the Caribbean,4458.759,1977.5,True,45.5
+Papua New Guinea,598,PNG,Oceania,10389.635,2001.5,True,21.5
+Paraguay,600,PRY,Latin America and the Caribbean,6844.146,1990.5,True,32.5
+Peru,604,PER,Latin America and the Caribbean,33845.617,1987.5,True,35.5
+Philippines,608,PHL,Asia,114891.199,1992.5,True,30.5
+Poland,616,POL,Europe,38762.844,1946.5,False,76.5
+Portugal,620,PRT,Europe,10430.738,1947.0,False,76.0
+Guinea-Bissau,624,GNB,Africa,2153.339,2017.0,False,6.0
+Timor-Leste,626,TLS,Asia,1384.286,2010.0,True,13.0
+Puerto Rico,630,PRI,Latin America and the Caribbean,3242.022,1960.0,True,63.0
+Qatar,634,QAT,Asia,2979.082,1988.5,True,34.5
+Réunion,638,REU,Africa,874.883,1973.5,True,49.5
+Romania,642,ROU,Europe,19118.479,1941.5,False,81.5
+Russian Federation,643,RUS,Europe,145440.5,1938.5,False,84.5
+Rwanda,646,RWA,Africa,13954.472,2017.5,True,5.5
+Saint Lucia,662,LCA,Latin America and the Caribbean,179.285,1982.0,True,41.0
+Saint Vincent and the Grenadines,670,VCT,Latin America and the Caribbean,101.323,1981.0,True,42.0
+Sao Tome and Principe,678,STP,Africa,230.871,2011.5,True,11.5
+Saudi Arabia,682,SAU,Asia,33264.292,2002.0,True,21.0
+Senegal,686,SEN,Africa,18077.573,2016.5,False,6.5
+Serbia,688,SRB,Europe,6773.201,1934.0,False,89.0
+Seychelles,690,SYC,Africa,127.951,1974.0,True,49.0
+Sierra Leone,694,SLE,Africa,8460.512,2019.0,True,4.0
+Singapore,702,SGP,Asia,5789.09,1963.0,True,60.0
+Slovakia,703,SVK,Europe,5518.054,1947.0,False,76.0
+Viet Nam,704,VNM,Asia,100352.192,1982.0,True,41.0
+Slovenia,705,SVN,Europe,2118.396,1937.0,False,86.0
+Somalia,706,SOM,Africa,18358.615,2074.5,False,-51.5
+South Africa,710,ZAF,Africa,63212.384,1984.0,True,39.0
+Zimbabwe,716,ZWE,Africa,16340.822,2002.5,True,20.5
+Spain,724,ESP,Europe,47911.58,1941.0,False,82.0
+South Sudan,728,SSD,Africa,11483.374,2022.5,False,0.5
+Sudan,729,SDN,Africa,50042.791,2018.0,False,5.0
+Western Sahara,732,ESH,Africa,579.729,1993.0,True,30.0
+Suriname,740,SUR,Latin America and the Caribbean,628.886,1981.0,True,42.0
+Eswatini,748,SWZ,Africa,1230.506,2001.0,True,22.0
+Sweden,752,SWE,Europe,10551.494,1931.0,False,92.0
+Switzerland,756,CHE,Europe,8870.561,1933.5,False,89.5
+Syrian Arab Republic,760,SYR,Asia,23594.623,2003.0,True,20.0
+Tajikistan,762,TJK,Asia,10389.798,1999.5,True,23.5
+Thailand,764,THA,Asia,71702.435,1974.0,True,49.0
+Togo,768,TGO,Africa,9304.338,2015.5,False,7.5
+Tonga,776,TON,Oceania,104.598,2000.0,True,23.0
+Trinidad and Tobago,780,TTO,Latin America and the Caribbean,1502.932,1966.5,True,56.5
+United Arab Emirates,784,ARE,Asia,10642.081,1989.0,True,34.0
+Tunisia,788,TUN,Africa,12200.431,1986.0,True,37.0
+Türkiye,792,TUR,Asia,87270.502,1981.5,True,41.5
+Turkmenistan,795,TKM,Asia,7364.438,1990.5,True,32.5
+Uganda,800,UGA,Africa,48656.601,2026.5,False,-3.5
+Ukraine,804,UKR,Europe,37732.836,1932.0,False,91.0
+North Macedonia,807,MKD,Europe,1831.802,1956.0,True,67.0
+Egypt,818,EGY,Africa,114535.772,1994.0,True,29.0
+United Kingdom,826,GBR,Europe,68682.962,1936.5,False,86.5
+Jersey,832,JEY,Europe,103.674,1928.0,False,95.0
+United Republic of Tanzania,834,TZA,Africa,66617.606,2020.0,False,3.0
+United States of America,840,USA,Northern America,343477.335,1948.0,False,75.0
+Burkina Faso,854,BFA,Africa,23025.776,2025.5,False,-2.5
+Uruguay,858,URY,Latin America and the Caribbean,3388.08,1945.0,False,78.0
+Uzbekistan,860,UZB,Asia,35652.307,1988.5,True,34.5
+Venezuela (Bolivarian Republic of),862,VEN,Latin America and the Caribbean,28300.854,1981.5,True,41.5
+Samoa,882,WSM,Oceania,216.663,2007.0,False,16.0
+Yemen,887,YEM,Asia,39390.799,2024.0,False,-1.0
+Zambia,894,ZMB,Africa,20723.965,2020.0,False,3.0

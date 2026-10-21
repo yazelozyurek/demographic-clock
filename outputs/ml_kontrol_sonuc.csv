@@ -1,0 +1,9 @@
+set,n,model,medyan_mutlak_hata,ortalama_mutlak_hata,p_ham,p_holm,takvimi_gecti
+A,64,Takvim (baz),9.5,10.523,,,False
+A,64,OLS,7.473,8.122,0.007,,False
+A,64,LASSO,7.078,8.114,0.004,,False
+A,64,Random forest,8.524,9.317,0.121,0.121,False
+B,64,Takvim (baz),9.5,10.523,,,False
+B,64,OLS,7.007,8.135,0.006,,False
+B,64,LASSO,7.075,8.169,0.004,,False
+B,64,Random forest,8.074,8.838,0.035,0.069,False
