@@ -1,0 +1,367 @@
+{
+ "aciklama": "30 Ekim asıl kayıt, kurgu sürüm 2. Saniyeler kaynak kayıttaki zamanlar. sessiz: o kadar saniye sessizlik (görüntü goruntu_bas'tan). sustur: tuş sesi için sıfırlanan aralıklar.",
+ "kesim": {
+  "x": 31,
+  "y": 90,
+  "genislik": 2818,
+  "yukseklik": 1585
+ },
+ "cikti": {
+  "genislik": 2560,
+  "yukseklik": 1440
+ },
+ "parcalar": [
+  {
+   "ad": "tam kayıt",
+   "kaynak": "~/Desktop/Ekran Kaydı 2026-10-30 12.24.24.mov",
+   "sustur": [
+    [
+     18.75,
+     20.1
+    ],
+    [
+     85.2,
+     86.5
+    ],
+    [
+     372.87,
+     374.15
+    ],
+    [
+     389.95,
+     391.2
+    ],
+    [
+     392.22,
+     392.46
+    ],
+    [
+     398.37,
+     398.5
+    ]
+   ],
+   "bolumler": [
+    {
+     "bas": 3.2,
+     "son": 18.78,
+     "not": "kapak (animasyon bitene kadar kısaltma yok)"
+    },
+    {
+     "bas": 19.5,
+     "son": 24.45,
+     "not": "2. sayfaya geçiş (solma 19,55–19,85) … 'Our data is … 2024.'"
+    },
+    {
+     "bas": 24.65,
+     "son": 28.78,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 29.17,
+     "son": 31.0,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 31.22,
+     "son": 38.39,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 38.68,
+     "son": 39.7,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 40.14,
+     "son": 46.43,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 47.01,
+     "son": 50.95,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 65.75,
+     "son": 75.97,
+     "not": "huni cümlesi ('the funnel…'; 61,6'daki 'In' parçası ilk denemenin 'billion' sonunu taşıdığı için çıkarıldı) … 'dashed.'"
+    },
+    {
+     "bas": 76.15,
+     "son": 77.77,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 77.99,
+     "son": 81.93,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 82.13,
+     "son": 85.25,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 86.0,
+     "son": 88.8,
+     "not": "3. sayfaya geçiş (~86,05) … 'each country'"
+    },
+    {
+     "bas": 89.02,
+     "son": 90.55,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 90.88,
+     "son": 95.28,
+     "not": "'separately' (kullanıcı geri istedi; yükseltme yok, önündeki 0,6 sn boşluk kısaldı) … 'nine children.'"
+    },
+    {
+     "bas": 95.49,
+     "son": 100.85,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 108.35,
+     "son": 114.77,
+     "not": "'So we borrowed…' (103,5'teki yarım 'So, we' çıkarıldı) … 'Watch what happens…'"
+    },
+    {
+     "bas": 115.03,
+     "son": 119.75,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 120.08,
+     "son": 125.6,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "sessiz": 11.5,
+     "goruntu_bas": 113.0,
+     "not": "animasyon beklemesi (görüntüyü büyüyen animasyon kaplıyor)"
+    },
+    {
+     "bas": 125.6,
+     "son": 130.4,
+     "not": "'By calendar year…' … 'Japan about ninety.'"
+    },
+    {
+     "bas": 130.55,
+     "son": 132.61,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 132.76,
+     "son": 138.0,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 138.31,
+     "son": 140.82,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 140.91,
+     "son": 143.08,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 143.27,
+     "son": 148.6,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 161.85,
+     "son": 162.57,
+     "not": "4. sayfa: 'First, income…' ikinci denemesi"
+    },
+    {
+     "bas": 162.64,
+     "son": 164.78,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 165.08,
+     "son": 171.19,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 171.46,
+     "son": 175.21,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 175.62,
+     "son": 177.85,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 188.65,
+     "son": 192.4,
+     "not": "'Women's education…'"
+    },
+    {
+     "bas": 200.45,
+     "son": 206.53,
+     "not": "'That no is a result…' … 'does health come first?'"
+    },
+    {
+     "bas": 206.86,
+     "son": 208.0,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 214.1,
+     "son": 217.51,
+     "not": "'We measured a second clock…' (208,5'teki yarım deneme çıkarıldı)"
+    },
+    {
+     "bas": 217.97,
+     "son": 221.0,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 228.85,
+     "son": 234.52,
+     "not": "'Above the line…' … 'sun rise.'"
+    },
+    {
+     "bas": 234.91,
+     "son": 244.83,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 247.75,
+     "son": 249.51,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 249.7,
+     "son": 251.56,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 251.76,
+     "son": 252.32,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 252.72,
+     "son": 253.73,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 254.02,
+     "son": 260.5,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 272.95,
+     "son": 277.1,
+     "not": "5. sayfa: 'So, one more question…' (4. sayfadaki fazladan 'So,' çıkarıldı)"
+    },
+    {
+     "bas": 281.2,
+     "son": 283.96,
+     "not": "'We ran three tests…' … 'gained most.'"
+    },
+    {
+     "bas": 284.07,
+     "son": 284.95,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 286.83,
+     "son": 291.49,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 291.69,
+     "son": 293.0,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 293.23,
+     "son": 298.6,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 320.0,
+     "son": 326.33,
+     "not": "'Where they saved more lives…' ikinci denemesi"
+    },
+    {
+     "bas": 326.5,
+     "son": 333.3,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 342.1,
+     "son": 345.05,
+     "not": "'This supports…' … 'not a race.'"
+    },
+    {
+     "bas": 345.23,
+     "son": 349.97,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 350.14,
+     "son": 362.15,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 362.66,
+     "son": 365.43,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 365.66,
+     "son": 366.51,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 366.92,
+     "son": 371.39,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 371.61,
+     "son": 372.87,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 373.55,
+     "son": 375.91,
+     "not": "kaynakçaya geçiş (solma 373,6–373,8) … 'Thank you.' + 1,6 sn kapanış"
+    },
+    {
+     "bas": 376.25,
+     "son": 378.7,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 378.91,
+     "son": 380.18,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 380.73,
+     "son": 382.03,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 382.33,
+     "son": 384.36,
+     "not": "duraklama kısaltıldı"
+    },
+    {
+     "bas": 384.87,
+     "son": 391.2,
+     "not": "duraklama kısaltıldı"
+    }
+   ]
+  }
+ ]
+}

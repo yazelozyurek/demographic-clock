@@ -34,6 +34,21 @@ Plan: `plan.md` (commit 52407d4, analizden önce). Kod: `ku_testi.py` (ön kayı
 - **S2: bir ülke dışarıda:** β −5,58 (Guatemala çıkınca) ile −3,96 (Meksika çıkınca) arasında. Tek ülkeye bağlı değil.
 - **S3:** araç, 1940 yaşam beklentisiyle (Spearman +0,62) ve 1950 TFR'siyle (−0,42) güçlü ilişkili.
 
+## Sonradan tanı 2 (24 Ekim 2026; `sonradan_kontrol2.py`, `log_sonradan2.txt`; kanıt değil)
+
+Soru: "1940 sağlığı sabitken araç zayıflıyor" bulgusunu netleştirmek. Etki aynı kalıp sadece bulanıklaşıyor mu, yoksa kayboluyor mu?
+
+- **S4:** Aracın %30'u 1940 yaşam beklentisiyle, %22'si 1950 TFR'siyle açıklanıyor.
+- **S5, 1940 sağlığı sabitken:** İki bağ birden küçülüyor.
+  - "İlaç → sağlık" bağı −0,52'den −0,11'e iniyor (F 43 → 2,2).
+  - "İlaç → doğurganlık" bağı (indirgenmiş form) +2,25'ten +0,61'e iniyor, yani %73 küçülüyor (p 0,52).
+  - β'nın yönü aynı kalıyor (−5,6), ama aralık sınırsız.
+  - Yani etki aynı kalıp bulanıklaşmıyor; doğal deneyin bilgisinin çoğu kayboluyor.
+- **S6, 1950 TFR'si sabitken:** Araç sağlığı hâlâ biraz oynatıyor (F 7,5). Ama doğurganlık bağı %81 küçülüyor: β −1,85, AR [−9,85; 9,25].
+- **S7, kırılma noktası:** İlaç–doğurganlık bağının %36'sı sağlık dışı bir yoldan geliyorsa (ör. yüksek doğurganlıkla başlayan ülkenin "düşecek daha çok yeri" olması), AR aralığı 0'ı içerir. Başlangıç koşulları bu bağın %68–81'ini "açıklıyor" (sağlık dışı yolun üst sınırı). Bu yüzden bu ihtimali dışlayamıyoruz.
+- **S8, oransal sonuç (ΔlnTFR):** β −0,57 (p 0,10), AR [−1,24; 0,14]. Yaşam beklentisi %10 daha çok artınca TFR ≈ %5,5 daha çok düşüyor, ama aralık 0'ı içeriyor.
+- **Yorum:** Ön kayıtlı sonuç ("destekliyor") değişmiyor. Ama destek kırılgan: Başlangıçta aynı derecede hasta ya da aynı derecede doğurgan olan ülkeler karşılaştırılınca sağlığın etkisini ayıramıyoruz. Sınırlılık cümlesi iki sebebi de söylemeli: "the signal comes from how sick and how fertile countries were at the start."
+
 ## Dürüst yorum
 
 1. **Yön Q3 ile aynı ve güçlü:** Yeni ilaç ve aşılardan daha çok kazanan ülkelerde doğurganlık 1990'a kadar daha çok düştü. Etki pencere uzadıkça büyüyor (gecikmeyle tutarlı).

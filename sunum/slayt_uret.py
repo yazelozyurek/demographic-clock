@@ -23,20 +23,25 @@ if ACIK:   # Taslak 2 sunumuna yüklü görseller
             "pairs": "/_blob/480fe8b5220e025a3c643900a99f1114", "spread": "/_blob/6afc521136c9be963ef368147eb4afee",
             "pop": "/_blob/7f1af236fa5dd9d9d4c17865920fb95b", "three": "/_blob/0c33c6deb84f3597cf8497d0eeb2b478", "health": ""}
 elif os.environ.get("DESTE") != "eski":   # FİNAL koyu sunum (https://claude.ai/artifact/MEYv3jt4EcXwixohtjvXd4)
-    BLOB = {"cover": "/_blob/fffb88015fe5885854f6b1925247f566", "gif": "/_blob/499a19039b078b0fd7247e0f155a4f1e",
-            "regions": "/_blob/21253fd0c70125b06abe8643d716cf88", "hist": "/_blob/282a6f13b1afbe1383e7d81ff7c95070",
-            "corr": "/_blob/4697bf3d112167be2b61548e6c9cd8ac", "map": "/_blob/4aec6eb7a607c658a140c8dd7310536e",
+    BLOB = {"cover": "/_blob/10e7865b3d88505b0631823d2895bc00", "cover_video": "/_blob/d245cc929e07718559956a2de9ec2cc7",   # 25 Ekim sürüm 48: kapak = durağan resim (outputs/final_0_cover_still.png) + MP4 klip (outputs/final_0_cover_clip.mp4, SLAYT=1 python pilot/kapak_video.py); sunumda klip oynar, PDF'te durağan resim. Geri dönüş: cover = /_blob/d5c1bfcf2f7e374610f89a434f2634bb ve cover_video = ""
+            "gif": "/_blob/499a19039b078b0fd7247e0f155a4f1e",   # (sürüm 47'ye kadar) kapak: hareketli WebP 1920×1080, ara tam kare yok; 24 Ekim gece sürüm 46: "health clock" ve "median" etiketleri 2015'te beliriyor (sürüm 34'teki /_blob/68ff11bd736db58a8498a9addd33f734); önceki denemeler /_blob/e72f46cce97ba7a829e531bf33eb1274, /_blob/584a069601803144ddfee799350aeeba; eski statik kapak = /_blob/fffb88015fe5885854f6b1925247f566
+            "regions": "/_blob/eb0db242cfb31514d4b28ac53aa0e47e", "hist": "/_blob/282a6f13b1afbe1383e7d81ff7c95070",
+            "corr": "/_blob/d63e6063fff9afc3c5c9c929c3e510cb", "map": "/_blob/afa28c268fc885165b27c608de187d27",
+            # 25 Ekim sürüm 49: regions = projeksiyonda parlama yok (eski /_blob/21253fd0c70125b06abe8643d716cf88),
+            # corr = "Mother's mean age" etiketi (eski /_blob/4697bf3d112167be2b61548e6c9cd8ac)
             "pairs": "/_blob/be4ff1fd6ab3b9712ad0cbc9060f0725", "spread": "/_blob/bf6e5f05e6acc33d4de0afcd9296bb99",
             "pop": "/_blob/8ca44322eccafc5bc2e8b4bd18f27157", "three": "/_blob/970a39face59db71f46dd40819e62d1b",
-            "health": "/_blob/b1d72b545cb86a90463a2ba68ed58cf6",
-            "cause": "/_blob/81a2837e4fdd7f58597a27b3e4504a3a", "popc": "/_blob/bbaf9de68785b764d82c5e8e21516a4e"}   # Q4 (22 Ekim)
+            "health": "/_blob/d59c59057a8132b74c2b5ab993179c83",
+            "cause": "/_blob/ee6cdf29991a947707c25ffbd3ac979d", "popc": "/_blob/bbaf9de68785b764d82c5e8e21516a4e"}   # Q4 (22 Ekim)
+    # 24 Ekim: map = ±180° düzeltmeli harita (eski /_blob/4aec6eb7a607c658a140c8dd7310536e); health ve cause = bölge şekilli
+    # (renk körü için) sürümler (eski health /_blob/b1d72b545cb86a90463a2ba68ed58cf6, eski cause /_blob/81a2837e4fdd7f58597a27b3e4504a3a)
 else:      # Taslak 1 sunumuna yüklü görseller
     BLOB = {"cover": "/_blob/f69f4620deb9aeb3e9a1fa4c09a03881", "gif": "/_blob/a9abf229ad9e7c9c9c41caa06e4d9776",
             "regions": "/_blob/22f79961c14eb6d2cce5e5feff16c9cb", "hist": "/_blob/b762ce40843ed4b19c9e233a3c00bc59",
             "corr": "/_blob/25a9e727fe782b64d03b408bf316fa7a", "map": "/_blob/9cd760a97941af07ca69daa5cdef74b3",
             "pairs": "/_blob/a2ba1d79c53b9f7b6fd0038117bbc707", "spread": "/_blob/afc4421084826537284e3f6d07ce4877",
             "pop": "/_blob/48fb614e93609f297677809fe4af714b", "three": "/_blob/4b28a971c0a6c58f3c65af80e4fcae2d", "health": ""}
-for _k in ("cause", "popc"): BLOB.setdefault(_k, "")   # Q4 görselleri: sunuma yüklenince final sözlüğüne id'leri yazılır
+for _k in ("cause", "popc", "cover_video"): BLOB.setdefault(_k, "")   # Q4 görselleri: sunuma yüklenince final sözlüğüne id'leri yazılır
 if os.environ.get("ONIZLEME"):   # yerel önizleme (sadece final koyu sunum): görseller doğrudan outputs/ klasöründen
     _o = "file://" + str(KOK / "outputs") + "/"
     BLOB = {k: _o + v for k, v in {"cover": "final_0_cover_clock2.png", "gif": "final_anim_son_kare_dark_sade.png",
@@ -107,15 +112,19 @@ def hucre(metin, zemin, kalin=False, sol=False, ek=""):
     return (f'<p style="background:{zemin};color:{yazi_rengi(zemin)};font-size:24px;line-height:1.3;padding:3px 12px;border-radius:6px;'
             f'text-align:{"left" if sol else "right"};{"font-weight:600;" if kalin else ""}{ek}">{metin}</p>')
 
-def cubuk(etiket, deger, metin, renk, olcek, etiket_w=250, parla=False):
+def cubuk(etiket, deger, metin, renk, olcek, etiket_w=250, parla=False, en_az=70, tek_satir=False):
+    # 26 Ekim: tek_satir = white-space:nowrap. Slides programı kutusuna sığmayan "kelimeyi" ortasından bölüyor
+    # (R² kartında 70 px'lik kutuda "0.27" → "0.2" / "7"); nowrap ile kutu yazıya göre genişler.
     golge = "box-shadow:0 0 18px rgba(63,193,255,0.55);" if parla else ""
+    tek = ";white-space:nowrap" if tek_satir else ""
     return (f'<div style="display:flex;flex-direction:row;gap:10px;align-items:center">'
             f'<p style="width:{etiket_w}px;font-size:24px;line-height:1.2;color:{"#FFFFFF" if parla else "#C9D4DC"}">{etiket}</p>'
-            f'<p style="width:{max(int(deger * olcek), 70)}px;background:{renk};{golge}color:#0F1A24;font-size:24px;line-height:1.2;font-weight:600;'
-            f'padding:1px 10px;border-radius:6px;text-align:right">{metin}</p></div>')
+            f'<p style="width:{max(int(deger * olcek), en_az)}px;background:{renk};{golge}color:#0F1A24;font-size:24px;line-height:1.2;font-weight:600;'
+            f'padding:1px 10px;border-radius:6px;text-align:right{tek}">{metin}</p></div>')
 
-def baslik_satiri(adlar, hizalar, pad="1px 12px"):
-    return "".join(f'<p style="font-size:24px;line-height:1.2;color:#9FB0BD;padding:{pad};text-align:{h}">{a}</p>' for a, h in zip(adlar, hizalar))
+def baslik_satiri(adlar, hizalar, pad="1px 12px", boyut=24):
+    return "".join(f'<p style="font-size:{boyut}px;line-height:1.2;color:#9FB0BD;padding:{pad};text-align:{h};white-space:nowrap">{a}</p>'
+                   for a, h in zip(adlar, hizalar))
 
 def kapat(notlar):
     return f"<aside>{notlar}</aside>\n</section>\n"
@@ -130,30 +139,28 @@ kor, nij = d23.at["Republic of Korea", "TFR"], d23.at["Niger", "TFR"]
 po = pd.read_csv(KOK / "clean/para_okul_tablosu.csv").set_index("Location")
 
 # =============== Kapak ===============
+VIDEO = f' data-video="{BLOB["cover_video"]}"' if BLOB.get("cover_video") else ""   # Slides tipi: <img src=durağan data-video=klip>
 s = ('<section id="cover" data-transition="fade" style="background:#101C27;color:#EEF2F4;font-family:\'IBM Plex Sans\', Arial, sans-serif;'
      'padding:104px 128px 96px;display:flex;flex-direction:column;gap:18px">\n'
-     f'<img src="{BLOB["cover"]}" alt="The Demographic Clock: a glowing clock dial from 1920 to 2080. Each of 200 countries is a dot at the year its '
-     'fertility fell fastest, coloured by region; Europe clusters around 1930–1950, Latin America and Asia around 1965–2000, Africa around '
-     '2010–2030. A white inner band is the health clock, the years life expectancy rose fastest; it runs a median 18 years ahead. Türkiye is ringed: '
-     'health 1965, fertility 1982. A gold hand marks 2023. In the centre, all countries’ curves shifted to their own turning point form one shared S-curve (R² = 0.94)" style="position:absolute;left:0;top:0;width:1920px;height:1080px;object-fit:cover">\n'
+     f'<img src="{BLOB["cover"]}"{VIDEO} alt="The Demographic Clock, animated: a gold hand sweeps from 1920 to 2023 and each country lights up in the year its fertility fell fastest, Europe first and Africa last; the white health band, the year life expectancy rose fastest, fills a median 18 years ahead. Türkiye is ringed: health 1965, fertility 1982. In the centre, all countries’ curves shifted to their own turning point form one S-curve (R² = 0.94)." style="position:absolute;left:0;top:0;width:1920px;height:1080px;object-fit:cover">\n'
      '<p style="font-size:26px;letter-spacing:3px;text-transform:uppercase;color:#7FB0F0">ASA DataQuest 2026 · Undergraduate</p>\n'
      '<h1 style="font-family:\'Source Serif 4\', Georgia, serif;font-size:96px;font-weight:700;line-height:1.02;letter-spacing:-1px;color:#FFFFFF;width:940px;'
      'background:linear-gradient(100deg, #6FB8FF 0%, #A98BFF 50%, #FF8A5C 100%);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent">The Demographic Clock</h1>\n'
-     '<p style="font-size:34px;line-height:1.35;color:#C9D4DC;width:780px">Same path, different time zones. Health turns first; money does not set the clock.</p>\n'
+     '<p style="font-size:34px;line-height:1.35;color:#C9D4DC;width:780px">Same path, different time zones. Health turns first; income does not set the clock.</p>\n'
      '<div style="flex:1"></div>\n<div style="display:flex;flex-direction:column;gap:10px;width:760px">\n'
      '<p style="font-size:24px;line-height:1.4;color:#9FB0BD">Each dot is a country at its turning point, the year its fertility fell fastest '
-     '(hollow: inferred). White inner band: the health clock, the year life expectancy rose fastest. White rings: Türkiye. Gold hand: 2023. '
+     '(hollow: inferred). White inner band: the health clock, the year life expectancy rose fastest. White rings: Türkiye. Gold hand: 2023, the last year of data. '
      'Centre: all 200 paths shifted to their turning point form one curve.</p>\n'
      '<p style="font-size:24px;line-height:1.4;color:#9FB0BD"><span style="color:#4DA3FF">●</span> Asia <span style="color:#FF7A3D">●</span> Africa '
      '<span style="color:#2FD49A">●</span> Europe <span style="color:#FFC233">●</span> Latin Am. <span style="color:#FF5FA2">●</span> N. Am. '
      '<span style="color:#A98BFF">●</span> Oceania</p>\n'
      '<div style="border-top:1px solid #3A4B5A;padding-top:16px;display:flex;flex-direction:column;gap:6px">\n'
-     '<p style="font-size:32px;font-weight:600;color:#FFFFFF">Stat4Sight</p>\n'
-     '<p style="font-size:26px;line-height:1.35;color:#D3DCE2">Yazel Sude Özyürek · Elif Zarife Yıldırım</p>\n'
-     '<p style="font-size:26px;line-height:1.35;color:#D3DCE2">Zehra İklil Canatar · Rojbin Bağatur</p>\n'
+     '<p style="font-size:40px;line-height:1.35;color:#FFFFFF">Stat4Sight</p>\n'
+     '<p style="font-size:30px;line-height:1.35;color:#D3DCE2">Yazel Sude Özyürek · Elif Zarife Yıldırım</p>\n'
+     '<p style="font-size:30px;line-height:1.35;color:#D3DCE2">Zehra İklil Canatar · Rojbin Bağatur</p>\n'
      '<p style="font-size:24px;line-height:1.35;color:#B9C6CF">Kırıkkale University, Department of Statistics</p>\n</div>\n</div>\n')
-s += kapat("Hello, we are Stat4Sight from Kırıkkale University. Every country is moving from large families to small ones. "
-           "Our project asks three things: is it the same journey everywhere, does money or school set its timing, and does health come first?")
+s += kapat("Hello, we are Stat4Sight from Kırıkkale University. Every country is moving from high to low fertility. "
+           "Our project starts with three questions: is it the same journey everywhere, does income or education set its timing, and does health come first?")
 yaz("cover", s)
 
 # =============== Slayt 1: Soru ve veri · 2×2 kart ızgarası ===============
@@ -166,7 +173,7 @@ kanca = (f'<div style="width:420px;display:flex;flex-direction:column;align-item
          + kanca_sayi(kor, "#4FB3FF", "Korea") + '<p style="font-size:24px;color:#7F92A1">vs</p>' + kanca_sayi(nij, "#FF8A3D", "Niger")
          + '</div><p style="font-size:24px;line-height:1.2;color:#9FB0BD;white-space:nowrap">children per woman, 2023</p></div>\n')
 s = bolum_ac("question", "1 · Question and data", "One journey, very different times",
-             '<span style="color:#FF8A3D">Q1</span> Same path, only different timing? · <span style="color:#FF8A3D">Q2</span> Money or school? · '
+             '<span style="color:#FF8A3D">Q1</span> Same path, only different timing? · <span style="color:#FF8A3D">Q2</span> Income or education? · '
              '<span style="color:#FF8A3D">Q3</span> Health first?',
              kanca)
 huni = '<div style="flex:1;display:flex;flex-direction:column;justify-content:space-around">\n'
@@ -180,8 +187,8 @@ for w, g, yazi, renk, sag in [(380, "#FF6A2B, #FF8A5C", "555 rows", "#FF8A5C", "
              f'<p style="font-size:24px;line-height:1.2;color:{renk}">{sag}</p></div>\n')
 huni += '</div>'
 s += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">\n'
-s += kart("Children per woman by region, 1950–2100",
-          gorsel("regions", "Line chart: population-weighted children per woman by region, 1950–2100; Africa highest, Europe lowest, all converging near replacement by 2100 in the UN projection", 784, 232))
+s += kart("Total fertility rate by region, 1950–2100",
+          gorsel("regions", "Line chart: population-weighted children per woman by region, 1950–2100; Africa highest, Europe lowest; in the UN projection all regions converge between 1.6 and 2.0 by 2100", 784, 232))
 s += kart("Correlations across 200 countries, 2023",
           gorsel("corr", "Correlation heatmap, 2023: fertility −0.82 with life expectancy and −0.87 with median age; life expectancy and infant mortality −0.91", 784, 232))
 s += kart("How the 200 countries are spread",
@@ -191,12 +198,12 @@ s += '</div>\n'
 s += anlam("The world is moving to small families, but not in step: in 2023 half the countries were below replacement while some "
            "still averaged six children. So we ask <b>when</b> each country changes, and what goes with that moment.")
 s += DIPNOT.format("UN World Population Prospects 2024 · 1950–2023 estimates; dashed = UN projections · every excluded place is listed by name (excluded_places.csv)")
-s += kapat(f"In 2023, women in the Republic of Korea had {kor:.2f} children on average; women in Niger had {nij:.2f}. "
-           "In 1950, only 3 of 200 countries were below replacement; by 2023 it was 103. So we asked: do countries follow the same path, "
-           "and what moves with their turning point: money, school, or health?\n\n"
-           "Our data is UN World Population Prospects 2024. Summing every row gives 363 billion people, because regions repeat countries; "
+s += kapat(f"In 2023, the total fertility rate was {kor:.2f} in the Republic of Korea and {nij:.2f} in Niger. "
+           "The histograms show the shift: in 1950, only 3 of 200 countries were below replacement; by 2023, 103. So we asked: do countries follow the same path, "
+           "and what moves with their turning point: income, education, or health?\n\n"
+           "Our data is UN World Population Prospects 2024. In the funnel, summing every row gives 363 billion people, because regions repeat countries; "
            "countries alone give 8.09 billion. We keep 200 countries, 99.98 percent of the world, list every place we leave out, "
-           "and always draw UN projections dashed.")
+           "and draw UN projections dashed.")
 yaz("question", s)
 
 # =============== Slayt 2: Demografik Saat · üstte 2 büyük kart, altta 3 eşit kart ===============
@@ -213,12 +220,14 @@ s += kart("Shift each country to its own clock",
 s += kart("The clock on a map: year each country’s fertility fell fastest",
           gorsel("map", "World map coloured by turning-point year: Europe, North America and Australia turned before 1960 (mostly inferred), Latin America and Asia between 1965 and 2000, most of Africa after 2000", 1046, 296))
 s += '</div>\n<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px">\n'
-r2_icerik = '<div style="display:flex;flex-direction:column;gap:4px">' + "".join(cubuk(ad, v, f"{v:.2f}", renk, 245, 235, p) for ad, v, renk, p in r2) + '</div>'
+r2_icerik = '<div style="display:flex;flex-direction:column;gap:4px">' + "".join(cubuk(ad, v, f"{v:.2f}", renk, 245, 235, p, en_az=84, tek_satir=True) for ad, v, renk, p in r2) + '</div>'
 s += kart("Variation explained (R²)", r2_icerik)
-bt_icerik = ('<div style="display:grid;grid-template-columns:150px 1fr 1fr 1fr;gap:5px">'
-             + baslik_satiri(["Data to", "Naive", "Separate", "Shared"], ["left", "right", "right", "right"], "1px 8px"))
+# 24 Ekim: 150 px'lik sütunda "1993→2013" sığmıyor, ikinci yıl alt satıra kayıyordu → sütun 160 px, etiket tek satır (nowrap), 23 px
+bt_icerik = ('<div style="display:grid;grid-template-columns:160px 1fr 1fr 1fr;gap:5px">'
+             + baslik_satiri(["Data to", "Naive", "Separate", "Shared"], ["left", "right", "right", "right"], "1px 8px", boyut=22))
 for ad, n, a, o in bt:
-    bt_icerik += hucre(ad, "#1E2E3C", sol=True) + hucre(f"{n:.2f}", karis("#4A2A1C", "#D95926", (n - 0.5) / 0.65))
+    bt_icerik += hucre(ad, "#1E2E3C", sol=True, ek="font-size:23px;padding:3px 10px;white-space:nowrap")
+    bt_icerik += hucre(f"{n:.2f}", karis("#4A2A1C", "#D95926", (n - 0.5) / 0.65))
     bt_icerik += hucre(f"{a:.2f}", "#2E4254") + hucre(f"{o:.2f}", "linear-gradient(90deg, #3987e5, #3FC1FF)", kalin=True)
 bt_icerik += '</div>\n<p style="font-size:24px;line-height:1.2;color:#9FB0BD">median |error|, children per woman</p>'
 s += kart("Backtest: error 20 years ahead", bt_icerik)
@@ -228,10 +237,10 @@ s += '</div>\n'
 s += anlam("Countries differ mainly in <b>when</b> they turn, not how: given its own clock, one curve fits 94%, and regions differ clearly "
            "in timing (p&#160;&lt;&#160;0.001). A later clock is not a worse country.")
 s += DIPNOT.format("After SITAR growth curves (Cole et al., 2010) · * 16 of 200 separate fits hit their limits · region tests: 115 well-observed countries")
-s += kapat("Our first try fitted an S-shaped curve to each country separately. It fit, but gave nonsense: for Japan, whose decline happened before 1950, "
-           "it said women started at nine children.\n\nSo we borrowed the SITAR idea from children’s growth charts: one shared S-curve, and one number "
+s += kapat("Our first try fitted an S-shaped curve to each country separately. It fit, but gave implausible estimates: for Japan, whose decline happened before 1950, "
+           "it said women started at nine children.\n\nSo we borrowed the SITAR idea, SuperImposition by Translation And Rotation, from children’s growth charts: one shared S-curve, and one number "
            "per country — its turning point, the year fertility falls fastest. Watch what happens when we shift each country.\n\n"
-           "By calendar year, time explains 27 percent of the differences between countries. Shifted to their own turning points, one curve explains "
+           "By calendar year, time explains 27 percent of the variation in fertility. Shifted to their own turning points, one curve explains "
            "94 percent, and it predicted best in backtests.\n\nOn the map, the clock runs from Europe to Africa. "
            "In 2023, Nigeria is at its turning point, Türkiye passed it about forty years ago, Japan about ninety.")
 yaz("clock", s)
@@ -240,8 +249,8 @@ yaz("clock", s)
 sg = pd.read_csv(KOK / "clean/saglik_saati.csv")
 sg = sg[sg["guvenilir"] & sg["t0_saglik"].notna()]
 sg_once = 100 * (sg["fark"] > 0).mean(); sg_fark = sg["fark"].median()
-s = bolum_ac("money", "3 · What moves with the clock?", "Money does not set the clock; health turns first",
-             '<span style="color:#FF8A3D">Q2</span> Money or school? 66 countries, Maddison and Barro–Lee · '
+s = bolum_ac("money", "3 · What moves with the clock?", "Income does not set the clock; health turns first",
+             '<span style="color:#FF8A3D">Q2</span> Income or education? 66 countries, Maddison and Barro–Lee · '
              '<span style="color:#FF8A3D">Q3</span> Health first? 115 countries, UN WPP')
 s += '<div style="display:grid;grid-template-columns:640px 1fr;gap:16px">\n<div style="display:flex;flex-direction:column;gap:16px">\n'
 s += kart("Q2 · Error guessing the turning year",
@@ -269,14 +278,13 @@ s += anlam(f"No wealth threshold sets the clock. Health moves with it: in {sg_on
            f"a median {sg_fark:.0f} years earlier. These are patterns, not causes.")
 s += DIPNOT.format("<b>External data</b>: income from the Maddison Project Database 2023 (GDP per person, via Our World in Data) · schooling from Barro–Lee v3, women 25–34<br>"
                   "Health clock: same shared-curve method on UN WPP life expectancy, 1950–2023 · many other candidates screened (FDR) · association, not cause")
-s += kapat("Next: what lines up with the turning point?\n\n"
-           "First, money or school. In 66 countries, income at the turning point ranged from 1,100 to 24,000 dollars. As a threshold it missed "
-           "the year by 14 years, worse than guessing the typical year. Schooling was steadier, but no better than the calendar.\n\n"
-           "That no is a result, not a failure, and it led us to the oldest prediction of transition theory: does health come first? We measured "
-           f"a second clock, the year life expectancy rose fastest, with the same shared curve. In {sg_once:.0f} percent of 115 countries it came "
-           f"first, a median of {sg_fark:.0f} years earlier, and the two clocks move together, rho 0.77. We screened many candidates, with "
+s += kapat("First, income or education, on the left. GDP per person at the turning point ranged from 1,100 to 24,000 dollars. As a threshold it missed "
+           "the year by 14 years, worse than guessing the typical year. Women’s education was steadier, but no better than the calendar.\n\n"
+           "That no is a result, not a failure, and it led us to transition theory’s oldest prediction: does health come first? We measured "
+           f"a second clock, the year life expectancy rose fastest, with the same shared curve. Above the line, health came first: in {sg_once:.0f} "
+           f"percent of 115 countries, a median of {sg_fark:.0f} years earlier, and the two clocks move together, rho 0.77. We screened many candidates, with "
            "multiple-test correction.\n\n"
-           "So money does not set the clock; health moves with it. But first is not the same as cause: a rooster crows before every sunrise, "
+           "So income does not set the clock; health moves with it. But first is not the same as cause: a rooster crows before every sunrise, "
            "yet it does not make the sun rise.")
 yaz("money", s)
 
@@ -330,11 +338,11 @@ s += anlam("Where the 1940s medicines saved more lives, births first rose, but c
 s += DIPNOT.format("<b>Natural experiment</b>: Kreitmeir &amp; Überfuhr (2024) instrument, after Acemoglu &amp; Johnson (2007) · two-stage least squares, "
                    "weak-IV-robust 95% CI<br>Each test's plan was committed before its results · HIV: World Bank (UNAIDS) · Türkiye: UN WPP 2024 "
                    "intervals · ASA Ethical Guidelines (2022)")
-s += kapat("So, one more question: is health a cause, or just the rooster? We ran three tests, each planned before seeing its results. "
+s += kapat("So, one more question: is health a cause, or just the rooster? We ran three tests, each planned in advance. "
            "Two could not tell. The third is a natural experiment: in the 1940s, new medicines and vaccines reached the world at once, and "
-           "countries hit hardest by those diseases gained most. Where they saved more lives, more babies were born, but each woman had fewer: "
-           f"about ten percent more life expectancy, {-b10:.2f} fewer children by 1990. This supports health as a cause, but does not settle it, "
-           "because the signal comes from how sick countries were in 1940.\n\n"
+           "countries hit hardest by those diseases gained most. Where they saved more lives, more babies were born, but, as the chart shows, each woman had fewer: "
+           f"about ten percent more life expectancy, {-b10:.2f} fewer children by 1990. This supports health as a cause, but does not settle it: "
+           "the signal comes from how sick and how fertile countries were at the start.\n\n"
            f"Türkiye’s health clock turned in {tr_s}, its fertility clock in {tr_d}. Its population likely peaks in 2047; for 2100 we show "
            "a range, 26 to 125 million.\n\nOur limits: these are country patterns, not facts about individual women, and the clock is not a race.")
 yaz("turkiye", s)

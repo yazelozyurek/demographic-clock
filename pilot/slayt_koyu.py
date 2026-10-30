@@ -52,9 +52,9 @@ fig, ax = plt.subplots(figsize=(7.84, 2.42))
 ax.axvspan(2023.5, 2100, color=VURGU, alpha=0.03, lw=0)
 for b, r in BOLGE.items():
     parla(ax, bt.index[bt.index <= 2023], bt.loc[:2023, b], r)
-    parla(ax, bt.index[bt.index >= 2023], bt.loc[2023:, b], r, lw=2, ls=(0, (3, 2)))
+    ax.plot(bt.index[bt.index >= 2023], bt.loc[2023:, b], color=r, lw=2, ls=(0, (3, 2)))   # 25 Ekim: projeksiyonda parlama yok (üst üste binen çizgiler bulanık görünüyordu)
 parla(ax, dunya.index[dunya.index <= 2023], dunya.loc[:2023], VURGU, lw=2.2)
-parla(ax, dunya.index[dunya.index >= 2023], dunya.loc[2023:], VURGU, lw=1.8, ls=(0, (3, 2)))
+ax.plot(dunya.index[dunya.index >= 2023], dunya.loc[2023:], color=VURGU, lw=1.8, ls=(0, (3, 2)))
 son = bt.loc[2100].sort_values()
 etiket_y = {}
 yer = np.linspace(1.0, 4.4, len(son))                       # etiketleri üst üste binmesin diye yay
@@ -92,7 +92,7 @@ print("S1-B medyanlar:", [round(df.loc[df.Time == y, "TFR"].median(), 2) for y i
 d23 = df[df["Time"] == 2023].copy()
 d23["log IMR"] = np.log(d23["IMR"])
 deg = {"TFR": "Fertility", "LEx": "Life exp.", "log IMR": "Infant mort. (log)", "MedianAgePop": "Median age",
-       "MAC": "Mean age at birth", "CNMR": "Net migration"}                    # LE65 ≈ LEx, PopGrowth = aritmetik: kalabalık yapmasın
+       "MAC": "Mother's mean age", "CNMR": "Net migration"}   # 25 Ekim: "Mean age at birth" → annenin yaşı olduğu açık olsun                    # LE65 ≈ LEx, PopGrowth = aritmetik: kalabalık yapmasın
 K = d23[list(deg)].corr().rename(index=deg, columns=deg)
 ISI = LinearSegmentedColormap.from_list("isi", ["#3987e5", ORTA, "#e66767"])
 K = K.iloc[1:, :-1]                                         # alt üçgen: her çift bir kez
@@ -105,7 +105,7 @@ for i in range(K.shape[0]):
         if np.isnan(v): continue
         ax.text(j, i, f"{v:.2f}".replace("0.", ".").replace("-.", "−."), ha="center", va="center", fontsize=11,
                 color=("#FFFFFF" if abs(v) > 0.5 else (YAZI if abs(v) > 0.35 else YAZI2)), fontweight="bold" if abs(v) > 0.8 else None)
-KISA_D = {"Fertility": "Fertility", "Life exp.": "Life exp.", "Infant mort. (log)": "Infant mort.", "Median age": "Median age", "Mean age at birth": "Age at birth"}
+KISA_D = {"Fertility": "Fertility", "Life exp.": "Life exp.", "Infant mort. (log)": "Infant mort.", "Median age": "Median age", "Mother's mean age": "Mother's age"}
 ax.set_xticks(range(K.shape[1]), [KISA_D[c] for c in K.columns], rotation=25, ha="right", fontsize=11.5)
 ax.set_yticks(range(K.shape[0]), K.index, fontsize=11.5)
 fig.text(0.70, 0.78, "red: rise together", color="#C43B3B" if ACIK else "#e66767", fontsize=12, ha="left", fontweight="bold")

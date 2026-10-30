@@ -26,6 +26,9 @@ if ACIK:
     BOLGE = {"Asia": "#2a78d6", "Africa": "#eb6834", "Europe": "#1baf7a",
              "Latin America and the Caribbean": "#eda100", "Northern America": "#e87ba4", "Oceania": "#6250d6"}
 KISA = {"Latin America and the Caribbean": "Latin America", "Northern America": "N. America"}
+# renk körü için ikinci kodlama (24 Ekim): bölge = renk + şekil; Asya–Okyanusya ve Afrika–Latin Amerika renkleri renk körü için çok yakın
+ISARET = {"Asia": "o", "Africa": "^", "Europe": "D", "Latin America and the Caribbean": "s", "Northern America": "v", "Oceania": "P"}
+BOY = {"o": 1.0, "^": 1.25, "D": 0.8, "s": 0.9, "v": 1.25, "P": 1.25}             # şekiller gözde aynı büyüklükte görünsün
 
 # ---------- sağlık saati: ortak eğri + zaman kayması (t0 ile aynı "dene-düzelt" algoritması) ----------
 t0 = pd.read_csv(KOK / "clean/t0_tablosu.csv").set_index("LocID")
@@ -71,7 +74,8 @@ ax.plot([lo, hi], [lo, hi], color=YAZI2, lw=1.4, ls=(0, (4, 3)))
 ax.text(2004, 2000.5, "same year", color=YAZI2, fontsize=12.5, rotation=31, ha="center", va="bottom")
 for b, renk in BOLGE.items():
     x = g[g["bolge"] == b]
-    if len(x): ax.scatter(x["t0_saglik"], x["t0"], s=58, color=renk, edgecolor=KART, lw=1.2, zorder=3, label=KISA.get(b, b))
+    if len(x): ax.scatter(x["t0_saglik"], x["t0"], s=58 * BOY[ISARET[b]], marker=ISARET[b], color=renk, edgecolor=KART, lw=1.2,
+                          zorder=3, label=KISA.get(b, b))
 tr = g.set_index("Location").loc["Türkiye"]
 ax.scatter(tr["t0_saglik"], tr["t0"], s=240, facecolor="none", edgecolor=VURGU, lw=2.2, zorder=4)
 ax.annotate(f"Türkiye: health {tr['t0_saglik']:.0f}, fertility {tr['t0']:.0f}", (tr["t0_saglik"], tr["t0"]), xytext=(1977, 1969.5),

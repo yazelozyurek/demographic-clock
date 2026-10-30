@@ -1,0 +1,84 @@
+Başladı: Sat Oct 24 16:32:16 +03 2026
+== 16:32:16  pilot/slayt_grafikleri.py
+slayt 1: 3 103 187
+slayt 4: zirve 2047 91.4 | 2100 65.3 25.6 125.3
+dışarıda kalanlar: {'Turning point not se': 88, 'No Maddison income o': 46, 'Under 100,000 people': 37}
+== 16:32:20  pilot/saglik_saati.py (Q3)
+ortak LEx eğrisi: 30.2 → 81.5 yıl, k = -0.035
+n = 115, ρ = 0.774 (p = 3.8e-24), bölge içi ρ = 0.71, sağlık önce = %94, medyan fark = 18.0 yıl (IQR 10–26)
+                   t0_saglik      t0  fark
+Location                                  
+Türkiye               1965.0  1981.5  16.5
+Republic of Korea     1959.0  1967.5   8.5
+Brazil                1966.0  1976.5  10.5
+India                 1985.0  1986.0   1.0
+Bangladesh            1987.5  1993.0   5.5
+yazıldı: outputs/v3_s3_health.png
+== 16:32:22  pilot/slayt_koyu.py
+S1-A dünya TFR 1950/2023/2100: 4.95 2.18 1.8
+S1-B medyanlar: [5.97, 3.55, 2.01, 1.71]
+S1-C TFR–LEx r = -0.82 | TFR–median age r = -0.87
+S2-S4 grafikleri kaydedildi
+== 16:32:25  pilot/harita_test.py
+haritada çizilmeyen t0 ülkesi: [474]
+Kruskal–Wallis H = 25.2, p = 4.7e-05, n = 115  |  n: {'Africa': 25, 'Asia': 44, 'Europe': 4, 'Lat. Am.': 32, 'Oceania': 10}
+medyanlar: {'Africa': 1998, 'Asia': 1988, 'Europe': 1966, 'Lat. Am.': 1980, 'Oceania': 1998}
+       a        b  p_ham  p_holm
+  Africa     Asia 0.0025  0.0226
+  Africa   Europe 0.0059  0.0475
+  Africa Lat. Am. 0.0000  0.0001
+  Africa  Oceania 0.3331  0.6662
+    Asia   Europe 0.0335  0.2342
+    Asia Lat. Am. 0.0445  0.2342
+    Asia  Oceania 0.3496  0.6662
+  Europe Lat. Am. 0.1127  0.3381
+  Europe  Oceania 0.0560  0.2342
+Lat. Am.  Oceania 0.0373  0.2342
+== 16:32:27  pilot/kapak_saat.py
+Kaydedildi · 200 ülke noktası · dolu 115 · kesilen (t0 > 2080) 1
+== 16:32:28  pilot/animasyon.py
+194 kare, 12.9 sn, 12.8 MB
+== 16:32:50  pilot/ml_kontrol.py
+Set A: n = 64, çıkan ülke: ['Kyrgyzstan', 'Tajikistan']
+Set B: n = 64, çıkan ülke: ['Kyrgyzstan', 'Tajikistan']
+set  n         model  medyan_mutlak_hata  ortalama_mutlak_hata  p_ham  p_holm  takvimi_gecti
+  A 64  Takvim (baz)               9.500                10.523    NaN     NaN          False
+  A 64           OLS               7.473                 8.122  0.007     NaN          False
+  A 64         LASSO               7.078                 8.114  0.004     NaN          False
+  A 64 Random forest               8.524                 9.317  0.121   0.121          False
+  B 64  Takvim (baz)               9.500                10.523    NaN     NaN          False
+  B 64           OLS               7.007                 8.135  0.006     NaN          False
+  B 64         LASSO               7.075                 8.169  0.004     NaN          False
+  B 64 Random forest               8.074                 8.838  0.035   0.069          False
+
+Permütasyon önemi (karıştırılınca medyan mutlak hata kaç yıl artıyor; eğitim verisi üzerinde, betimsel):
+                              ozellik  onem_yil
+                          egitim_1950      4.84
+                           bolge_Asia      1.22
+                              ekvator      0.65
+                       log_gelir_1950      0.49
+                         bolge_Europe      0.00
+bolge_Latin America and the Caribbean     -0.03
+== 16:33:40  Q4 test 1 (d_neden)
+== 16:33:46  Q4 test 2 (e_hiv)
+== 16:33:48  Q4 test 3 (f_kreitmeir)
+== 16:33:58  Q4 sonradan kontroller
+== 16:34:47  pilot/neden_grafigi.py (Q4)
+Q4: n = 50, eğim -0.225 çocuk / (1.000 kişide 1 ölüm), p = 0.0012; x aralığı 0.3–10.3
+yazıldı: outputs/v3_s4_cause.png, outputs/v3_s4_pop_compact.png
+== 16:34:51  sunum/slayt_uret.py
+yazıldı: cover, question, clock, money, turkiye
+Bitti: Sat Oct 24 16:34:52 +03 2026
+--- git: değişen dosyalar (notebook'larda sadece zaman bilgisi değişir; Claude çıktıları ayrıca karşılaştıracak) ---
+ M kesif/f_kreitmeir/SONUC.md
+ M notebooks/01_veriyi_tanima.ipynb
+ M notebooks/02_temizlik.ipynb
+ M notebooks/03_eda.ipynb
+ M notebooks/04_demografik_saat.ipynb
+ M notebooks/05_para_mi_okul_mu.ipynb
+ M notebooks/06_final_grafikler.ipynb
+?? kesif/f_kreitmeir/log_sonradan2.txt
+?? kesif/f_kreitmeir/sonradan_kontrol2.py
+?? kesif/g_hiz/
+?? tekrar_calistir.sh
+?? tekrar_log.txt

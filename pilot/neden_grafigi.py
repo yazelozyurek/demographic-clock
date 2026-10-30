@@ -16,6 +16,9 @@ KART, YAZI, YAZI2, IZGARA, VURGU = "#15222E", "#E8EEF2", "#9FB0BD", "#253645", "
 BOLGE = {"Asia": "#3987e5", "Africa": "#d95926", "Europe": "#199e70",
          "Latin America and the Caribbean": "#c98500", "Northern America": "#d55181", "Oceania": "#9085e9"}
 KISA = {"Latin America and the Caribbean": "Latin America", "Northern America": "N. America"}
+# renk körü için ikinci kodlama (24 Ekim): bölge = renk + şekil (pilot/saglik_saati.py ile aynı)
+ISARET = {"Asia": "o", "Africa": "^", "Europe": "D", "Latin America and the Caribbean": "s", "Northern America": "v", "Oceania": "P"}
+BOY = {"o": 1.0, "^": 1.25, "D": 0.8, "s": 0.9, "v": 1.25, "P": 1.25}
 plt.rcParams.update({"figure.facecolor": KART, "axes.facecolor": KART, "savefig.facecolor": KART, "axes.edgecolor": IZGARA,
                      "axes.labelcolor": YAZI2, "xtick.color": YAZI2, "ytick.color": YAZI2, "text.color": YAZI,
                      "axes.spines.top": False, "axes.spines.right": False, "axes.grid": True, "grid.color": IZGARA,
@@ -45,7 +48,7 @@ for b, renk in BOLGE.items():
     for zengin, dolgu in [(0, renk), (1, "none")]:
         s = x[(x["bolge"] == b) & (x["startrich"] == zengin)]
         if len(s):
-            a.scatter(s["dusus"], s["dTFR"], s=62, facecolor=dolgu, edgecolor=renk if zengin else KART, lw=1.8 if zengin else 1.1,
+            a.scatter(s["dusus"], s["dTFR"], s=62 * BOY[ISARET[b]], marker=ISARET[b], facecolor=dolgu, edgecolor=renk if zengin else KART, lw=1.8 if zengin else 1.1,
                       zorder=3, label=KISA.get(b, b) if zengin == 0 or not len(x[(x["bolge"] == b) & (x["startrich"] == 0)]) else None)
 etiket = {"LKA": (8, 6, "left"), "MEX": (8, -6, "left"), "KOR": (8, 0, "left"), "GTM": (-9, 0, "right"), "EGY": (8, -6, "left")}
 for iso, (dx, dy, ha) in etiket.items():

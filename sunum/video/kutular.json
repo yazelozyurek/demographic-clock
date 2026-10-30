@@ -1,0 +1,178 @@
+{
+ "question": [
+  {
+   "ad": "kart: Total fertility rate by region, 1950–2100",
+   "x": 128,
+   "y": 213.984375,
+   "w": 824,
+   "h": 297.1875
+  },
+  {
+   "ad": "kart: Correlations across 200 countries, 2023",
+   "x": 968,
+   "y": 213.984375,
+   "w": 824,
+   "h": 297.1875
+  },
+  {
+   "ad": "kart: How the 200 countries are spread",
+   "x": 128,
+   "y": 527.171875,
+   "w": 824,
+   "h": 297.1875
+  },
+  {
+   "ad": "kart: From raw file to sample",
+   "x": 968,
+   "y": 527.171875,
+   "w": 824,
+   "h": 297.1875
+  },
+  {
+   "ad": "Q satırı",
+   "x": 128,
+   "y": 164.1875,
+   "w": 1212,
+   "h": 33.796875
+  },
+  {
+   "ad": "bant",
+   "x": 128,
+   "y": 840.359375,
+   "w": 1664,
+   "h": 90.78125
+  },
+  {
+   "ad": "kanca",
+   "x": 1372,
+   "y": 64,
+   "w": 420,
+   "h": 133.984375
+  },
+  {
+   "ad": "kanca",
+   "x": 1456.484375,
+   "y": 75,
+   "w": 251.03125,
+   "h": 77.1875
+  }
+ ],
+ "clock": [
+  {
+   "ad": "kart: Shift each country to its own clock",
+   "x": 128,
+   "y": 211.984375,
+   "w": 562,
+   "h": 361.1875
+  },
+  {
+   "ad": "kart: The clock on a map: year each country’s fertility fell fastest",
+   "x": 706,
+   "y": 211.984375,
+   "w": 1086,
+   "h": 361.1875
+  },
+  {
+   "ad": "kart: Variation explained (R²)",
+   "x": 128,
+   "y": 589.171875,
+   "w": 544,
+   "h": 256.9375
+  },
+  {
+   "ad": "kart: Backtest: error 20 years ahead",
+   "x": 688,
+   "y": 589.171875,
+   "w": 544,
+   "h": 256.9375
+  },
+  {
+   "ad": "kart: Regions turn at different times",
+   "x": 1248,
+   "y": 589.171875,
+   "w": 544,
+   "h": 256.9375
+  },
+  {
+   "ad": "bant",
+   "x": 128,
+   "y": 862.109375,
+   "w": 1664,
+   "h": 90.78125
+  },
+  {
+   "ad": "animasyon",
+   "x": 147,
+   "y": 264.171875,
+   "w": 526,
+   "h": 296
+  }
+ ],
+ "money": [
+  {
+   "ad": "kart: Q2 · Error guessing the turning year",
+   "x": 128,
+   "y": 211.984375,
+   "w": 640,
+   "h": 243.953125
+  },
+  {
+   "ad": "kart: Q2 · Where countries stood at the turn",
+   "x": 128,
+   "y": 471.9375,
+   "w": 640,
+   "h": 166.75
+  },
+  {
+   "ad": "kart: Once 1950 health and schooling are known",
+   "x": 128,
+   "y": 654.6875,
+   "w": 640,
+   "h": 149.859375
+  },
+  {
+   "ad": "kart: Q3 · Two clocks: health turns first, fertility follows",
+   "x": 784,
+   "y": 211.984375,
+   "w": 1010,
+   "h": 592.5625
+  },
+  {
+   "ad": "bant",
+   "x": 128,
+   "y": 820.546875,
+   "w": 1664,
+   "h": 90.78125
+  }
+ ],
+ "turkiye": [
+  {
+   "ad": "kart: Q4 · The 1940s medicines as a natural experiment",
+   "x": 128,
+   "y": 211.984375,
+   "w": 940,
+   "h": 580.359375
+  },
+  {
+   "ad": "kart: Türkiye: health 1965 → fertility 1982",
+   "x": 1084,
+   "y": 211.984375,
+   "w": 708,
+   "h": 365.5625
+  },
+  {
+   "ad": "kart: What we do not claim",
+   "x": 1084,
+   "y": 593.546875,
+   "w": 708,
+   "h": 198.796875
+  },
+  {
+   "ad": "bant",
+   "x": 128,
+   "y": 808.34375,
+   "w": 1664,
+   "h": 90.78125
+  }
+ ]
+}

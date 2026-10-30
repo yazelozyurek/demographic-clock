@@ -68,6 +68,36 @@ for g in topo["objects"]["countries"]["geometries"]:
         else:
             parcalar.append((kimlik, dis))
 
+# ---------- ±180° düzeltmesi (24 Ekim; pilot/harita_animasyon.py ile aynı) ----------
+def kirp(xy, c, s):
+    """Sutherland–Hodgman: halkanın x = c doğrusunun bir yanında kalan kısmı (s=+1: x >= c, s=-1: x <= c)."""
+    cikti = []
+    for i in range(len(xy)):
+        p, q = xy[i - 1], xy[i]
+        p_ic, q_ic = s * (p[0] - c) >= 0, s * (q[0] - c) >= 0
+        if p_ic != q_ic:
+            t = (c - p[0]) / (q[0] - p[0])
+            cikti.append((c, p[1] + t * (q[1] - p[1])))
+        if q_ic:
+            cikti.append((q[0], q[1]))
+    return np.array(cikti)
+
+def antimeridyen_bol(dis):
+    """Boylamı 180'den -180'e atlayan halkayı (Rusya, Fiji) haritanın iki kenarına ayrı parça olarak böler.
+    Bölünmezse bu halkalar haritayı boydan boya geçen düz şeritler olarak çiziliyordu (Kuzey Kutbu'nda şerit, 16,5° G'de çizgi)."""
+    if np.abs(np.diff(dis[:, 0])).max() <= 180:
+        return [dis]
+    lon = np.rad2deg(np.unwrap(np.deg2rad(dis[:, 0])))                          # sürekli boylam (ör. 175 → 190)
+    assert abs(lon[-1] - lon[0]) < 1e-6, "halka ±180'de kapanmıyor"
+    c = 180.0 if lon.max() > 180 else -180.0
+    xy = np.column_stack([lon, dis[:, 1]])
+    ana = kirp(xy, c, -1 if c > 0 else 1)                                        # haritanın kendi tarafı
+    tasan = kirp(xy, c, 1 if c > 0 else -1)                                      # ±180'i aşan kısım → öbür kenar
+    if len(tasan): tasan[:, 0] -= 360 * np.sign(c)
+    return [p for p in (ana, tasan) if len(p) >= 3]
+
+parcalar = [(lid, d) for lid, dis in parcalar for d in antimeridyen_bol(dis)]
+
 t0 = pd.read_csv(KOK / "clean/t0_tablosu.csv")
 kapsam = pd.read_csv(KOK / "clean/countries_1950_2100.csv", usecols=["LocID", "pop2023"]).drop_duplicates()
 kucuk = set(kapsam.loc[kapsam["pop2023"] < 100, "LocID"])

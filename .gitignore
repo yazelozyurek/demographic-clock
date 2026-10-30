@@ -12,3 +12,38 @@ __pycache__/
 
 # Acemoglu & Johnson (2007) replication files: licence not stated, download from the MIT data archive (see data_dis/KAYNAKLAR.md)
 data_dis/aj2007/
+
+# Final narrated videos (110-195 MB each; GitHub's file limit is 100 MB). Rebuild with the scripts in pilot/ and sunum/video/
+outputs/Stat4Sight_video*.mp4
+
+# Rehearsal aids made with the Mac's built-in text-to-speech voice (practice only; the video uses the team's own voice)
+sunum/ses_referans/
+sunum/ses_referans_uret.py
+
+# Working material kept only on the team's computers (backups, drafts, rehearsal notes, early prototype, unused alternatives)
+sunum/eski_surumler/
+sunum/taslak2_acik/
+sunum/pdf/
+sunum/konusma_metni.md
+sunum/konusma_metni_kisa_taslak.md
+sunum/README.md
+pilot/konusma_olc.py
+kesif/g_hiz/
+arac/
+pilot/harita_animasyon.py
+pilot/harita_video.py
+outputs/final_map_anim.webp
+outputs/final_map_video.mp4
+pilot/kapak.py
+outputs/final_0_cover.png
+pilot/kapak_saat_q3_oncesi.py
+outputs/final_0_cover_clock.png
+sunum/video/gostergeler_30ekim_uret.py
+sunum/video/kurgu_plani.json
+outputs/00_TASLAK_*
+outputs/*_onizleme_*
+outputs/*_preview_*
+outputs/*_acik*
+outputs/*_grafit*
+outputs/*_a.png
+outputs/*_g.png

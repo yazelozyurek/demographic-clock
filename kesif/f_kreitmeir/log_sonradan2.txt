@@ -1,0 +1,18 @@
+n 50 ülke, 50 küme
+a) araç ~ lnLE40            R² = 0.30
+a) araç ~ TFR1950           R² = 0.22
+a) araç ~ lnLE40 + TFR1950  R² = 0.30
+
+b/c) kontrol            | 1. aşama π [%95]            F    | indirgenmiş form ρ [%95]     p     | β (2SLS)  AR %95
+     yok               | -0.516 [-0.670; -0.361]   42.9 | +2.251 [+0.813; +3.689]  0.002 | -4.37    [-6.94, -1.79]
+     lnLE40            | -0.108 [-0.251; +0.035]    2.2 | +0.605 [-1.232; +2.443]  0.518 | -5.60    sınırsız (-30.00…30.00)
+     TFR1950           | -0.230 [-0.394; -0.065]    7.5 | +0.426 [-1.162; +2.013]  0.599 | -1.85    [-9.85, 9.25]
+     ikisi             | -0.108 [-0.253; +0.038]    2.1 | +0.712 [-0.831; +2.256]  0.366 | -6.62    sınırsız (-30.00…30.00)
+
+d) kırılma noktası: indirgenmiş formun %36'i sağlık dışı bir yoldan geliyorsa AR %95 aralığı 0'ı içerir (γ* = +0.813, ρ = +2.251)
+   lnLE40   sabitken indirgenmiş form %73 küçülüyor (bağın bu kadarı başlangıç koşuluyla 'açıklanıyor'; sağlık dışı yolun üst sınırı)
+   TFR1950  sabitken indirgenmiş form %81 küçülüyor (bağın bu kadarı başlangıç koşuluyla 'açıklanıyor'; sağlık dışı yolun üst sınırı)
+   ikisi    sabitken indirgenmiş form %68 küçülüyor (bağın bu kadarı başlangıç koşuluyla 'açıklanıyor'; sağlık dışı yolun üst sınırı)
+
+e) ΔlnTFR 1950→1990: F 42.9 · β -0.565 (p 0.102) · AR [-1.24, 0.14] · çeviri: yaşam beklentisi %10 daha çok artınca TFR %-5.5 değişir
+   + lnLE40: F 2.2 · β -2.057 · AR sınırsız (-30.00…30.00)

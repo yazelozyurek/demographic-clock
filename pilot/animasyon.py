@@ -11,6 +11,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import matplotlib
+import matplotlib.patheffects
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation, PillowWriter
@@ -33,7 +34,8 @@ else:
 FS = (1.6 if os.environ.get("SADE") == "1" else 1.15) if KOYU else 1.0   # slayt sürümü küçültüldüğü için yazılar büyük
 SON = {"koyu": "_dark", "grafit": "_grafit", "acik": "_acik"}.get(os.environ.get("TEMA"), "") + ("_sade" if os.environ.get("SADE") == "1" else "")
 U, L, K = 6.97, 1.67, 0.0816                       # 04 notebook'unun ortak eğrisi
-FPS = 15
+VIDEO = os.environ.get("VIDEO") == "1"   # 30 Ekim: video kurgusu için yüksek çözünürlüklü kareler (slayt GIF'i değişmez)
+FPS = 30 if VIDEO else 15
 
 df = pd.read_csv(KOK / "clean/countries_1950_2100.csv")
 df = df[df["pop2023"] >= 100]
@@ -61,10 +63,10 @@ def zaman_cizelgesi():
     for i in range(n): kareler.append((1.0, 1.0, (i + 1) / n))          # 4) 2023'teki konumlar belirir
     for _ in range(int(3.5 * FPS)): kareler.append((1.0, 1.0, 1.0))
     # ilk kare = son sahne: PDF'e aktarılınca GIF'in sadece ilk karesi görünür; döngüde de kesintisiz geçiş olur
-    return [(1.0, 1.0, 1.0)] + kareler
+    return kareler if VIDEO else [(1.0, 1.0, 1.0)] + kareler   # videoda döngü takvim görünümüyle başlar
 KARELER = zaman_cizelgesi()
 
-fig, ax = plt.subplots(figsize=(12.8, 7.2), dpi=100)
+fig, ax = plt.subplots(figsize=(12.8, 7.2), dpi=150 if VIDEO else 100)
 fig.patch.set_facecolor(ZEMIN); ax.set_facecolor(ZEMIN)
 fig.subplots_adjust(top=0.80, bottom=0.12, left=0.07, right=0.97)
 for s in ["top", "right"]: ax.spines[s].set_visible(False)
@@ -82,8 +84,10 @@ duz, kesik, etiket = {}, {}, {}
 for u, r in vurgu.items():
     duz[u], = ax.plot([], [], color=r, lw=2.6, zorder=3)
     kesik[u], = ax.plot([], [], color=r, lw=2.1, ls=(0, (4, 3)), zorder=3)
-    etiket[u] = ax.text(0, 0, u, color=r, fontsize=13 * FS, fontweight="bold", zorder=4, ha="left",
+    etiket[u] = ax.text(0, 0, u, color=r, fontsize=13 * FS, fontweight="bold", zorder=8 if VIDEO else 4, ha="left",
                         va="top" if u == "Japan" else "bottom")
+    if VIDEO:   # ülke adı ortak eğrinin ve gri çizgilerin altında kalmasın
+        etiket[u].set_path_effects([matplotlib.patheffects.withStroke(linewidth=5, foreground=ZEMIN)])
 z = np.linspace(-110, 140, 400)
 ortak, = ax.plot(z, L + (U - L) / (1 + np.exp(K * z)), color=YAZI, lw=2.2, zorder=4, alpha=0)
 ortak_yazi = ax.text(-104, 7.25, "one shared S-curve", color=YAZI, fontsize=12 * FS, alpha=0)
@@ -154,6 +158,11 @@ def ciz(kare):
     ortak.set_alpha(c); ortak_yazi.set_alpha(c)
     return []
 
+if VIDEO:
+    klasor = Path(os.environ["VIDEO_KLASOR"]); klasor.mkdir(parents=True, exist_ok=True)
+    for i in range(len(KARELER)):
+        ciz(i); fig.savefig(klasor / f"kare_{i:05d}.png", facecolor=ZEMIN)
+    print(f"{len(KARELER)} kare, {len(KARELER) / FPS:.2f} sn → {klasor}"); raise SystemExit
 ciz(1); fig.savefig(KOK / f"outputs/final_anim_ilk_kare{SON}.png", facecolor=ZEMIN)
 ciz(len(KARELER) - 1); fig.savefig(KOK / f"outputs/final_anim_son_kare{SON}.png", facecolor=ZEMIN)
 anim = FuncAnimation(fig, ciz, frames=len(KARELER), blit=False)
