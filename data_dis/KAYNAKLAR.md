@@ -9,6 +9,7 @@
 | barrolee_BL_v3_MF2564.csv | Barro–Lee v3, iki cinsiyet, 25–64 yaş | https://barrolee.github.io/BarroLeeDataSet/BLData/BL_v3_MF2564.csv | Aynı |
 
 - Our World in Data verileri CC BY 4.0 lisanslı. Kaynak gösterilerek kullanılabilir.
+- Barro–Lee verileri MIT lisanslı (github.com/barrolee/BarroLeeDataSet, "Copyright (c) 2020 barrolee"). Paylaşılabilir; lisans metni `LICENSE_BarroLee.txt` dosyasında.
 - Ülkeler ISO3 koduyla eşleştirilir (WPP `ISO3_code`, OWID `code`, Barro–Lee `WBcode`).
 - Atıflar 17 Ekim 2026'da doğrulandı (Maddison: research.rug.nl / IDEAS; Barro–Lee: NBER w15902, Harvard; SITAR: Bristol research portal).
 - Barro–Lee: makale 1950–2010; kullandığımız veri v3 (2021 güncellemesi, 1950–2015).
