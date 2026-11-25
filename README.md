@@ -91,3 +91,7 @@ Many comments and file names are in Turkish.
 ## Use of AI
 
 We used an AI assistant as a working tool: to write analysis code, propose and test methods, design the figures and draft the slides and narration. The team chose the questions, made the final decisions, reviewed and edited the AI-written code, and re-ran all of it before submission to confirm that every number reproduces.
+
+## License
+
+Code is released under the MIT License. Data files keep their original licences (see Data sources and `data_dis/KAYNAKLAR.md`).
