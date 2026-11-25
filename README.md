@@ -4,6 +4,9 @@
 Team **Stat4Sight**, Kırıkkale University, Department of Statistics:
 Yazel Sude Özyürek · Elif Zarife Yıldırım · Zehra İklil Canatar · Rojbin Bağatur
 
+🥉 Ranked 3rd in Best Statistical Insight, ASA DataQuest 2026 Türkiye  
+▶ [Watch the narrated video (4:25)](https://github.com/yazelozyurek/demographic-clock/releases/tag/v1.0)
+
 > This repository was kept private during the competition, as the rules required, and made public afterwards.
 
 ## Questions and main results
